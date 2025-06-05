@@ -4,15 +4,15 @@ This open source project is backed by individuals passionate about applying our 
 
 If you are a developer, designer, or data expert, start by reviewing the tasks in this board, tagged according to skillsets. If one piques your interest, **[email me](mailto:robert@viz.bible) to volunteer**.
 
-[ Project Board](Contributing%20205708d65762812fafc2db7559b0b7fb/Project%20Board%20205708d65762815db02de7561f18d409.csv)
+☑️ [Project Board](https://theographic.notion.site/fc0636f35634467d9fa8272330d89a0c?v=251875edaf424f659b86b56824be1629&pvs=25)
 
 ---
 
 # Coding
 
-Theographic began at a 3-day hackathon and grew from there. The initial build of a web-based reader uses [React](https://reactjs.org/) and [Gatsby](https://www.gatsbyjs.org/) (static site generator) hosted on [Netlify](https://www.netlify.com/). If you are familiar with these tools and want to help with the web app, see the [GitHub repo](https://github.com/robertrouse/theographic). To use Theographic data in your own app, refer to the [documentation](Documentation%20205708d6576281caa41afaa4d5669018.md).
+Theographic began at a 3-day hackathon and grew from there. The initial build of a web-based reader uses [React](https://reactjs.org/) and [Gatsby](https://www.gatsbyjs.org/) (static site generator) hosted on [Netlify](https://www.netlify.com/). If you are familiar with these tools and want to help with the web app, see the [GitHub repo](https://github.com/robertrouse/theographic). To use Theographic data in your own app, refer to the [documentation](documentation.md).
 
-👉 [See coding-related tasks](Contributing%20205708d65762812fafc2db7559b0b7fb/Project%20Board%20205708d65762815db02de7561f18d409.md)
+👉 [See coding-related tasks](https://theographic.notion.site/fc0636f35634467d9fa8272330d89a0c?v=db3b90ff3f9d4cd2bbcca9144610dc3f)
 
 [robertrouse/theographic](https://github.com/robertrouse/theographic)
 
@@ -20,23 +20,21 @@ Theographic began at a 3-day hackathon and grew from there. The initial build of
 
 Searching the scriptures should be as easy as searching Google or following link trails on Wikipedia. Interfaces should emulate the beauty found in God's handiwork. Designers are critical to creating a useful, successful application. Contribute your ideas in the form of sketches, prototypes, UI elements, or user research.
 
-👉 [See UX-related tasks](Contributing%20205708d65762812fafc2db7559b0b7fb/Project%20Board%20205708d65762815db02de7561f18d409.md)
+👉 [See UX-related tasks](https://theographic.notion.site/fc0636f35634467d9fa8272330d89a0c?v=c7594a54b802463db0b8cfffc38cd38d)
 
-[Prototypes, Sketches, and Wireframes](Contributing%20205708d65762812fafc2db7559b0b7fb/Prototypes,%20Sketches,%20and%20Wireframes%20205708d6576281a3a6e8c6a456229dcd.csv)
+📕 [Prototypes, Sketches, and Wireframes](https://theographic.notion.site/83b63100a06b477cacb006e2722492e7?v=4b15428337334f8dbbe00d3cea55e4be&pvs=25)
 
-[Design Principles for Digital Bibles](Articles%20205708d65762810089ece41af957b523/Design%20Principles%20for%20Digital%20Bibles%20205708d657628117a2b4c0919cb75f9c.md)
+📄 [Design Principles for Digital Bibles](https://theographic.notion.site/Design-Principles-for-Digital-Bibles-8a3e818183824f119364e5aea21c4a6f?pvs=25)
 
 # Data Collection
 
 Anyone who uses spreadsheets or databases on a regular basis can help gather, structure, validate, and disambiguate data. [Airtable](https://airtable.com/) serves as the main interface for importing, editing, and exporting. Spatial data is refined by linking biblical places to linked open data available through [Recogito](https://recogito.pelagios.org/).
 
-👉 [See data collection tasks](Contributing%20205708d65762812fafc2db7559b0b7fb/Project%20Board%20205708d65762815db02de7561f18d409.md)
-
- 
+👉 [See data collection tasks](https://theographic.notion.site/fc0636f35634467d9fa8272330d89a0c?v=77265222f752462d8840451438407cf5)
 
 Read more about these tools and how to use them with Theographic at these links:
 
-[View and Export Data with Airtable](Documentation%20205708d6576281caa41afaa4d5669018/View%20and%20Export%20Data%20with%20Airtable%20205708d6576281b391a2de034e01ae92.md)
+📄 [View and Export Data with Airtable](documentation/view-and-export-data-with-airtable.md)
 
 # Data Visualization
 
@@ -44,4 +42,4 @@ Dataviz is an effective medium to connect pieces of stories spread across the Bi
 
 Here are some ideas for inspiration:
 
-[ Data Visualization Ideas](Contributing%20205708d65762812fafc2db7559b0b7fb/Data%20Visualization%20Ideas%20205708d65762810e9e5cd93838cdbbfd.csv)
+📊 [Data Visualization Ideas](https://theographic.notion.site/549873a655bd41c283394a066259c67e?v=ee4ec7a9685c4848a728036e63ca0b66&pvs=25)
