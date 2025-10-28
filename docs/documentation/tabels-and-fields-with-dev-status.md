@@ -12,7 +12,7 @@
 ## Table: books - 16 fields
 | Name | Status | Links to | Notes |
 |------|--------|----------|-------|
-| osisName | Validated |  | Abbreviation matching the Open Scriptural Information Standard |
+| osisName | Validated |  | Abbreviation matching the Open Scriptural Information Standard. |
 | bookOrder | Validated |  | Order of books in the traditional Protestant canon, excluding Apocrypha. |
 | bookName | Validated |  | Full name of the book |
 | bookDiv | Validated |  | High-level divisions of the Bible |
@@ -28,21 +28,21 @@
 | writers | Validated | chapters | Roll-up from Chapter-level writer assignment |
 | peopleCount | Validated | people | Number of people mentioned by name within the book |
 | placeCount | Validated | places | Number of places mentioned by name within the book |
-
+| modified | Incomplete |  | Last modified date and time |
 ---
 
-## Table: chapters - 8 fields
+## Table: chapters - 9 fields
 | Name | Status | Links to | Notes |
 |------|--------|----------|-------|
 | osisRef | Validated |  | Unique identifier using book.chapter |
-| book | Validated | books |  |
+| book | Validated | books | Links to records in the "book" table. |
 | chapterNum | Validated |  |  |
 | writer | Validated | people | Links to a person record, based on traditional understandings of authorship. |
-| verses | Validated | verses |  |
+| verses | Validated | verses |  Links to verse records of all verses within the chapter. |
 | slug | Validated |  | Lowercase, url-friendly version of Osis Ref |
 | peopleCount | Validated |  | Number of people mentioned by name within the chapter |
 | placeCount | Validated |  | Number of places mentioned by name within the chapter |
-
+| modified | Validated |  | Last modified date and time |
 ---
 
 ## Table: easton - 9 fields
@@ -50,39 +50,40 @@
 |------|--------|----------|-------|
 | dictLookup | Validated |  | Unique string for a dictionary entry, split out by sub-paragraphs |
 | index | Validated |  | Unique identifier |
+#TODO termID 
 | termLabel | Validated |  | Title of the original entry |
 | dictText | Validated |  | Text of the dictionary entry |
+#TODO def_id
+#TODO has_list
 | itemNum | Validated |  | Sub-section number, if multiple sections are listed in one entry |
 | matchType | Temporary |  | Used to validate scripts which automatically match entities. |
 | matchSlugs | Temporary |  | Used to check automatically matched slugs of entities in other tables |
 | personLookup | Populated | people | Links to the "people" table |
 | placeLookup | Populated | places | Links to the "places" table |
-
 ---
 
 ## Table: events - 19 fields
 | Name | Status | Links to | Notes |
 |------|--------|----------|-------|
-| eventName | Incomplete |  | Unique title for an event |
-| sequence | Incomplete |  | Puts events in order where multiple events fall in one year and more precise dates are unknown. |
-| eventGroup | Incomplete |  | Groups multiple events in broader categories |
+| title | Incomplete |  | Unique title for an event |
+#TODO eventID
 | sortKey | Incomplete |  | Uses a combination of year and sequence to sort all events chronolgically. |
 | startDate | Incomplete |  | ISO formatted date to identify calendar dates where known |
-| years | Incomplete | periods | Link to periods to get multiple year formats and identify eras |
-| startYear | Incomplete | periods | minimum year, ISO standard format |
 | duration | Incomplete |  | Event length in days, years, etc. for use in end date calculations |
-| minYearLookup | Temporary | verses | Minimum year from verses table, used for data validation and consistency checks |
-| maxYearLookup | Temporary | verses | Maximum year from verses table, used for data validation and consistency checks |
-| preceedingEvent | Incomplete | events | Establishes predecessor-successor constraints if applicable |
-| Event Group | Incomplete |  | Groups events into a higher level for simplified views of longer time ranges |
+#TODO rangeFlag
+| predecessor | Incomplete | events | Establishes predecessor-successor constraints if applicable |
+#TODO lag
+#TODO lagType
+#TODO partOf
 | participants | Incomplete | people | Links people involved in the event |
-| participantGroups | Incomplete | peopleGroups | Links groups involved in the event |
-| placeOccurred | Incomplete | places | Links to place records where the event took place |
-| versesDescribed | Incomplete | verses | Verses which serve as an original narrative for the event |
-| versesReferenced | Incomplete | verses | Verses which refer to a prior event and do not serve as the original narrative for that event. |
-| verseCount | Incomplete |  | Number of verses related to the event |
-| slug | Incomplete |  | Lowercase, url-friendly version of event group name |
-
+| locations | Incomplete | places | Links to place records where the event took place |
+| verses | Incomplete | verses | Verses which serve as an original narrative for the event |
+#TODO people (from verses)
+#TODO places (from verses)
+#TODO groups
+#TODO notes
+#TODO verseSort
+| modified | Validated |  | Last modified date and time |
 ---
 
 ## Table: people - 34 fields
@@ -107,7 +108,10 @@
 | birthPlace | Validated | places | Links to place records where the birth location is known |
 | deathPlace | Validated | places | Links to place records where the death location is known |
 | memberOf | Validated | peopleGroups | Links to peopleGroups if membership can be deduced. |
+#TODO dictionaryLink
+#TODO dictionaryText
 | eastons | Incomplete | easton | Links to relevant sub-sections in Easton's dictionary. Complete for the book of Acts |
+#TODO Easton's Count
 | dictText | Incomplete | easton | Markdown-formatted text from relevant sub-section in Easton's dictionary. |
 | events | Incomplete | events | Events in which the person participated. Complete for the book of Acts |
 | eventGroups | Incomplete | events | Lookup from events table to identify higher-level groups. |
@@ -121,8 +125,10 @@
 | halfSiblingsSameFather | Validated | people |  |
 | chaptersWritten | Validated | people | Specific chapters written by this person according to traditional understanding of authorship. |
 | alphaGroup | Validated |  | Used for alphabetical indexing |
+#TODO partners
 | slug | Validated |  | Lowercase, url-friendly version of personLookup |
-
+#TODO timeline
+| modified | Validated |  | Last modified date and time |
 ---
 
 ## Table: peopleGroups - 4 fields
@@ -130,9 +136,11 @@
 |------|--------|----------|-------|
 | groupName | Validated |  | Unique name |
 | members | Validated | people | Links to a person record for members of this group |
+#TODO partOf
 | verses | Incomplete | verses | Verses mentioning this group |
 | events | Incomplete | events | Events in which this group participated. |
-
+#TODO events_dev
+| modified | Validated |  | Last modified date and time |
 ---
 
 ## Table: periods - 9 fields
@@ -147,10 +155,10 @@
 | peopleDied | Incomplete | people | People who died that year, if known. |
 | events | Incomplete | events | Events which occurred in that year. Complete for the book of Acts. |
 | booksWritten | Incomplete | books | Books of the bible written that year, if known. |
-
+| modified | Validated |  | Last modified date and time |
 ---
 
-## Table: places - 35 fields
+## Table: places - 40 fields
 | Name | Status | Links to | Notes |
 |------|--------|----------|-------|
 | placeLookup | Validated |  | Unique identifier using name and ID number |
@@ -168,8 +176,10 @@
 | openBibleLong | Populated |  | Longitude from OpenBible.info |
 | rootID | Temporary |  | If lat/Lon is borrowed from another place, this links to that record. |
 | precision | Incomplete |  | Relative accuracy of lat/long assignment |
-| Aliases | Populated |  | Alternate names for the same coordinate |
+| aliases | Populated |  | Alternate names for the same coordinate |
 | comment | Incomplete |  | Comments from OpenBible.info/geo |
+#TODO dictionaryLink
+#TODO dictionaryText
 | verses | Validated | verses | Links to verse records mentioning this place by name |
 | verseCount | Validated | verses | Counts how many verses mention this place by name |
 | eastons | Incomplete | easton | Links to relevant sub-sections in Easton's dictionary. Complete for the book of Acts |
@@ -179,6 +189,7 @@
 | recogitoLon | Populated |  | Longitude from Recogito matches |
 | peopleBorn | Validated | people | People born here, where known |
 | peopleDied | Validated | people | People who dies here, where known. |
+| hasBeenHere | Incomplete |  | People who have been to this location. Complete for the book of Acts |
 | recogitoStatus | Populated |  | Verification of inks to other historical databases |
 | recogitoComments | Populated |  | Notes on place assignments from Recogito |
 | recogitoType | Populated |  | Geographic type from Recogito matches |
@@ -188,7 +199,8 @@
 | eventsHere | Incomplete | events | Events which took place at the location. Complete for the book of Acts |
 | alphaGroup | Validated |  | Used for alphabetical indexing |
 | slug | Validated |  | Lowercase, url-friendly version of placeLookup |
-
+#TODO featureSubType
+| modified | Validated |  | Last modified date and time |
 ---
 
 ## Table: verses - 18 fields
@@ -209,9 +221,9 @@
 | placesCount | Validated | places | Number of place mentioned by name |
 | yearNum | Populated |  | Year related to the verse from Torrey's Treasury of Scripture Knowledge. Not aligned with the events table. |
 | peopleGroups | Incomplete | peopleGroups | Groups of people mentioned in the verse text |
-| eventsDescribed | Incomplete | events | If the text is an original narrative for an event, this links to those details. |
 | eventsReferenced | Incomplete | events | If this verse references a prior event and does not serve as an original narrative, this links to the referenced event. |
 | quotesFrom | Incomplete | verses | If the text is a quotation from another verse, this links to the quoted source |
-
+#TODO event
+| modified | Validated |  | Last modified date and time |
 ---
 

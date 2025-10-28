@@ -1,0 +1,13 @@
+Questions on books table
+1. "modified" column is in all tables except for "easton" table. 
+Is it to be included in docs and marked as 'Validated'?
+
+2. "modified" column has all empty entries for "books" table. I'm curious what happened here and if I mark its status as 'Incomplete'.
+
+Questions on events table
+1. Is "people (from verses)" listing all the people that appear for every verse that exist? Hence, is that why there are many duplicate listings of people here? If so, is it 'Incomplete' for 'Status'?
+
+Questions on places table
+1. Will documentation for "places" table exist even after the geoJSON efforts complete? 
+2. Is it correct that geoJSON places data does not need manual documentation because it already follows linked places format?
+
