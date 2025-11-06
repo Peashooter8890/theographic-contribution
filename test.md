@@ -15,10 +15,10 @@
 | `slug` |  | Validated | Lowercase, url-friendly version of Osis Name |
 | `yearWritten` |  | Incomplete | Approximate year written, if known |
 | `placeWritten` |  | Incomplete | Place the book was written, if known |
-| `chapters` |  | Validated | Links to records in the "chapters" table |
-| `chapterCount` |  | Validated | Total chapters |
-| `verses` |  | Validated | Links to records in the "verses" table |
-| `verseCount` |  | Validated | Total verses |
+| `chapters` |  | Validated | Links to every chapter in the book |
+| `chapterCount` |  | Validated | Total number of chapters in the book |
+| `verses` |  | Validated | Links to every verse in the book |
+| `verseCount` |  | Val idated | Total number of verses in the book |
 | `writers` |  | Validated | Roll-up from Chapter-level writer assignment |
 | `peopleCount` |  | Validated | Number of people mentioned by name within the book |
 | `placeCount` |  | Validated | Number of places mentioned by name within the book |
