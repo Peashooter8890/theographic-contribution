@@ -1,0 +1,1814 @@
+[
+  {
+    "id": "recIFusdNl6d8dj3L",
+    "createdTime": "2018-05-13T17:19:17.000Z",
+    "fields": {
+      "osisName": "Gen",
+      "bookName": "Genesis",
+      "chapterCount": 50,
+      "bookDiv": "Pentateuch",
+      "shortName": "Ge",
+      "bookOrder": 1,
+      "verses": [
+        "rec7mkRLwey2ntUG9"
+      ],
+      "verseCount": 1533,
+      "chapters": [
+        "recViIBdFQyyJQtzE"
+      ],
+      "writers": [
+        "moses_2108"
+      ],
+      "testament": "Old Testament",
+      "slug": "gen",
+      "peopleCount": 1082,
+      "placeCount": 266
+    }
+  },
+  {
+    "id": "recsr5TGvFGOwA5SZ",
+    "createdTime": "2018-05-22T19:36:23.000Z",
+    "fields": {
+      "osisName": "Exod",
+      "bookName": "Exodus",
+      "chapterCount": 40,
+      "bookDiv": "Pentateuch",
+      "shortName": "Ex",
+      "bookOrder": 2,
+      "verses": [
+        "rec2zBQqsXFFt5QU8"
+      ],
+      "verseCount": 1213,
+      "chapters": [
+        "rec1yPgl5iaGn05J8"
+      ],
+      "writers": [
+        "moses_2108"
+      ],
+      "testament": "Old Testament",
+      "slug": "exod",
+      "peopleCount": 619,
+      "placeCount": 179
+    }
+  },
+  {
+    "id": "rec6qL6gTvX4tUw4A",
+    "createdTime": "2018-05-13T17:19:17.000Z",
+    "fields": {
+      "osisName": "Lev",
+      "bookName": "Leviticus",
+      "chapterCount": 27,
+      "bookDiv": "Pentateuch",
+      "shortName": "Le",
+      "bookOrder": 3,
+      "verses": [
+        "recvORXeb1bzTTQoW"
+      ],
+      "verseCount": 859,
+      "chapters": [
+        "recPbcf8q1Q8v1vyT"
+      ],
+      "writers": [
+        "moses_2108"
+      ],
+      "testament": "Old Testament",
+      "slug": "lev",
+      "peopleCount": 366,
+      "placeCount": 28
+    }
+  },
+  {
+    "id": "recs5u7KfYwwEE6JO",
+    "createdTime": "2018-05-13T17:19:17.000Z",
+    "fields": {
+      "osisName": "Num",
+      "bookName": "Numbers",
+      "chapterCount": 36,
+      "bookDiv": "Pentateuch",
+      "shortName": "Nu",
+      "bookOrder": 4,
+      "verses": [
+        "rec1IoqE6NJmJuaaM"
+      ],
+      "verseCount": 1288,
+      "chapters": [
+        "rec02lZpELyizXrU2"
+      ],
+      "writers": [
+        "moses_2108"
+      ],
+      "testament": "Old Testament",
+      "slug": "num",
+      "peopleCount": 832,
+      "placeCount": 207
+    }
+  },
+  {
+    "id": "rec2LnZw7EoTWReC0",
+    "createdTime": "2018-05-22T19:36:23.000Z",
+    "fields": {
+      "osisName": "Deut",
+      "bookName": "Deuteronomy",
+      "chapterCount": 34,
+      "bookDiv": "Pentateuch",
+      "shortName": "Dt",
+      "bookOrder": 5,
+      "verses": [
+        "recN3DO87dPKiAj9n"
+      ],
+      "verseCount": 959,
+      "chapters": [
+        "recg0BgJlU23c03HG"
+      ],
+      "writers": [
+        "moses_2108"
+      ],
+      "testament": "Old Testament",
+      "slug": "deut",
+      "peopleCount": 528,
+      "placeCount": 146
+    }
+  },
+  {
+    "id": "rec5dSv8N1iv8z9uC",
+    "createdTime": "2018-05-22T19:36:23.000Z",
+    "fields": {
+      "osisName": "Josh",
+      "bookName": "Joshua",
+      "chapterCount": 24,
+      "bookDiv": "Historical",
+      "shortName": "Jos",
+      "bookOrder": 6,
+      "verses": [
+        "recc44HeeZ0o9XU0D"
+      ],
+      "verseCount": 658,
+      "chapters": [
+        "recPDXtVWeiGPUqfO"
+      ],
+      "writers": [
+        "joshua_1727"
+      ],
+      "testament": "Old Testament",
+      "slug": "josh",
+      "peopleCount": 413,
+      "placeCount": 370
+    }
+  },
+  {
+    "id": "reczL2ckRW1qHvVfe",
+    "createdTime": "2018-05-22T19:36:23.000Z",
+    "fields": {
+      "osisName": "Judg",
+      "bookName": "Judges",
+      "chapterCount": 21,
+      "bookDiv": "Historical",
+      "shortName": "Jdg",
+      "bookOrder": 7,
+      "verses": [
+        "rec4jOp9nIBkRWY7P"
+      ],
+      "verseCount": 618,
+      "chapters": [
+        "recQ9L6sfa0CWf8GS"
+      ],
+      "writers": [
+        "samuel_2469"
+      ],
+      "testament": "Old Testament",
+      "slug": "judg",
+      "peopleCount": 454,
+      "placeCount": 244
+    }
+  },
+  {
+    "id": "recZuCb9Bn0RErpsL",
+    "createdTime": "2018-05-22T19:36:23.000Z",
+    "fields": {
+      "osisName": "Ruth",
+      "bookName": "Ruth",
+      "chapterCount": 4,
+      "bookDiv": "Historical",
+      "shortName": "Ru",
+      "bookOrder": 8,
+      "verses": [
+        "rec7KGzavR0Wcnmvw"
+      ],
+      "verseCount": 85,
+      "chapters": [
+        "recPjfSkXwKJVsj3O"
+      ],
+      "writers": [
+        "samuel_2469"
+      ],
+      "testament": "Old Testament",
+      "slug": "ruth",
+      "peopleCount": 57,
+      "placeCount": 9
+    }
+  },
+  {
+    "id": "rec4GS8yWh2R4mpdB",
+    "createdTime": "2018-05-22T19:36:23.000Z",
+    "fields": {
+      "osisName": "1Sam",
+      "bookName": "1 Samuel",
+      "chapterCount": 31,
+      "bookDiv": "Historical",
+      "shortName": "1Sa",
+      "bookOrder": 9,
+      "verses": [
+        "rec4zTbFEsJmyIFwZ"
+      ],
+      "verseCount": 810,
+      "chapters": [
+        "rec9G8e7trKJtRjM0"
+      ],
+      "writers": [
+        "samuel_2469"
+      ],
+      "testament": "Old Testament",
+      "slug": "1sam",
+      "peopleCount": 662,
+      "placeCount": 193
+    }
+  },
+  {
+    "id": "recMYdxLC2GjLRomD",
+    "createdTime": "2018-05-22T19:36:23.000Z",
+    "fields": {
+      "osisName": "2Sam",
+      "bookName": "2 Samuel",
+      "chapterCount": 24,
+      "bookDiv": "Historical",
+      "shortName": "2Sa",
+      "bookOrder": 10,
+      "verses": [
+        "rec4H0eJWW6BzE1L2"
+      ],
+      "verseCount": 695,
+      "chapters": [
+        "recn4ESCpiFjeGaCY"
+      ],
+      "writers": [
+        "samuel_2469, gad_1263, nathan_2153"
+      ],
+      "testament": "Old Testament",
+      "slug": "2sam",
+      "peopleCount": 556,
+      "placeCount": 166
+    }
+  },
+  {
+    "id": "reconzJEzr8kOsb3j",
+    "createdTime": "2018-05-22T19:36:23.000Z",
+    "fields": {
+      "osisName": "1Kgs",
+      "bookName": "1 Kings",
+      "chapterCount": 22,
+      "bookDiv": "Historical",
+      "shortName": "1Ki",
+      "bookOrder": 11,
+      "verses": [
+        "recmCkLvUxpY51bJB"
+      ],
+      "verseCount": 816,
+      "chapters": [
+        "rec4djrICdGSICvxX"
+      ],
+      "writers": [
+        "jeremiah_853"
+      ],
+      "testament": "Old Testament",
+      "slug": "1kgs",
+      "peopleCount": 586,
+      "placeCount": 192
+    }
+  },
+  {
+    "id": "recutYqTqunXPJKQO",
+    "createdTime": "2018-05-22T19:36:23.000Z",
+    "fields": {
+      "osisName": "2Kgs",
+      "bookName": "2 Kings",
+      "chapterCount": 25,
+      "bookDiv": "Historical",
+      "shortName": "2Ki",
+      "bookOrder": 12,
+      "verses": [
+        "rec7MGthx26lS6bA1"
+      ],
+      "verseCount": 719,
+      "chapters": [
+        "recaznGTmwKOSIzKw"
+      ],
+      "writers": [
+        "jeremiah_853"
+      ],
+      "testament": "Old Testament",
+      "slug": "2kgs",
+      "peopleCount": 554,
+      "placeCount": 265
+    }
+  },
+  {
+    "id": "rec2ZFQHqI4eUjhqX",
+    "createdTime": "2018-05-22T19:36:23.000Z",
+    "fields": {
+      "osisName": "1Chr",
+      "bookName": "1 Chronicles",
+      "chapterCount": 29,
+      "bookDiv": "Historical",
+      "shortName": "1Ch",
+      "bookOrder": 13,
+      "verses": [
+        "recIJ14BlamQIvokW"
+      ],
+      "verseCount": 942,
+      "chapters": [
+        "recRAcqtgn28zXm1a"
+      ],
+      "writers": [
+        "ezra_1245"
+      ],
+      "testament": "Old Testament",
+      "slug": "1chr",
+      "peopleCount": 836,
+      "placeCount": 161
+    }
+  },
+  {
+    "id": "rec410yOewjNfbeE3",
+    "createdTime": "2018-05-22T19:36:23.000Z",
+    "fields": {
+      "osisName": "2Chr",
+      "bookName": "2 Chronicles",
+      "chapterCount": 36,
+      "bookDiv": "Historical",
+      "shortName": "2Ch",
+      "bookOrder": 14,
+      "verses": [
+        "recMuoqjvb7j9PfYD"
+      ],
+      "verseCount": 822,
+      "chapters": [
+        "recgaZgmvFdgwgfzp"
+      ],
+      "writers": [
+        "ezra_1245"
+      ],
+      "testament": "Old Testament",
+      "slug": "2chr",
+      "peopleCount": 611,
+      "placeCount": 236
+    }
+  },
+  {
+    "id": "recit4Q50QB9nM3q2",
+    "createdTime": "2018-05-22T19:36:23.000Z",
+    "fields": {
+      "osisName": "Ezra",
+      "bookName": "Ezra",
+      "chapterCount": 10,
+      "bookDiv": "Historical",
+      "shortName": "Ezr",
+      "bookOrder": 15,
+      "verses": [
+        "recwGyFev3S5m2Cvp"
+      ],
+      "verseCount": 280,
+      "chapters": [
+        "rec8NRZuBuX6duX0i"
+      ],
+      "writers": [
+        "ezra_1245"
+      ],
+      "testament": "Old Testament",
+      "slug": "ezra",
+      "peopleCount": 209,
+      "placeCount": 89
+    }
+  },
+  {
+    "id": "rec3WEGPl0a1PS0cC",
+    "createdTime": "2018-05-13T17:19:17.000Z",
+    "fields": {
+      "osisName": "Neh",
+      "bookName": "Nehemiah",
+      "chapterCount": 13,
+      "bookDiv": "Historical",
+      "shortName": "Ne",
+      "bookOrder": 16,
+      "verses": [
+        "rec3pQvMwnq8Vpimi"
+      ],
+      "verseCount": 406,
+      "chapters": [
+        "recjHwBVHfYo4JY5D"
+      ],
+      "writers": [
+        "nehemiah_2172"
+      ],
+      "testament": "Old Testament",
+      "slug": "neh",
+      "peopleCount": 259,
+      "placeCount": 99
+    }
+  },
+  {
+    "id": "rec6yHFZ6w7UUw5Cu",
+    "createdTime": "2018-05-22T19:36:23.000Z",
+    "fields": {
+      "osisName": "Esth",
+      "bookName": "Esther",
+      "chapterCount": 10,
+      "bookDiv": "Historical",
+      "shortName": "Es",
+      "bookOrder": 17,
+      "verses": [
+        "reclgVXEpUAXnveNt"
+      ],
+      "verseCount": 167,
+      "chapters": [
+        "recpsbvzNqOs4mik2"
+      ],
+      "writers": [
+        "mordecai_2107"
+      ],
+      "testament": "Old Testament",
+      "slug": "esth",
+      "peopleCount": 119,
+      "placeCount": 24
+    }
+  },
+  {
+    "id": "recOA8nVVhKs30PSI",
+    "createdTime": "2018-05-13T17:19:17.000Z",
+    "fields": {
+      "osisName": "Job",
+      "bookName": "Job",
+      "chapterCount": 42,
+      "bookDiv": "Poetry-Wisdom",
+      "shortName": "Job",
+      "bookOrder": 18,
+      "verses": [
+        "recAmeTBiKKwa9996"
+      ],
+      "verseCount": 1070,
+      "chapters": [
+        "recaEis0tGGoX9S9m"
+      ],
+      "writers": [
+        "moses_2108"
+      ],
+      "testament": "Old Testament",
+      "slug": "job",
+      "peopleCount": 190,
+      "placeCount": 6
+    }
+  },
+  {
+    "id": "recKXZXO6cJwk2SxO",
+    "createdTime": "2018-05-22T19:36:23.000Z",
+    "fields": {
+      "osisName": "Ps",
+      "bookName": "Psalms",
+      "chapterCount": 150,
+      "bookDiv": "Poetry-Wisdom",
+      "shortName": "Ps",
+      "bookOrder": 19,
+      "verses": [
+        "recUrohpUTnXw8RTn"
+      ],
+      "verseCount": 2461,
+      "chapters": [
+        "recN5roZArs4UW8ij"
+      ],
+      "writers": [
+        "david_994"
+      ],
+      "testament": "Old Testament",
+      "slug": "ps",
+      "peopleCount": 1026,
+      "placeCount": 118
+    }
+  },
+  {
+    "id": "recRLdYtz1vjdW7yd",
+    "createdTime": "2018-05-22T19:36:23.000Z",
+    "fields": {
+      "osisName": "Prov",
+      "bookName": "Proverbs",
+      "chapterCount": 31,
+      "bookDiv": "Poetry-Wisdom",
+      "shortName": "Pr",
+      "bookOrder": 20,
+      "verses": [
+        "rechXM25zW5EJhKYM"
+      ],
+      "verseCount": 915,
+      "chapters": [
+        "rec6j5h8oblJDEU5Q"
+      ],
+      "writers": [
+        "solomon_2762"
+      ],
+      "testament": "Old Testament",
+      "slug": "prov",
+      "peopleCount": 100,
+      "placeCount": 0
+    }
+  },
+  {
+    "id": "recd3p656hOWx95Jk",
+    "createdTime": "2018-05-22T19:36:23.000Z",
+    "fields": {
+      "osisName": "Eccl",
+      "bookName": "Ecclesiastes",
+      "chapterCount": 12,
+      "bookDiv": "Poetry-Wisdom",
+      "shortName": "Ec",
+      "bookOrder": 21,
+      "verses": [
+        "reclWu06cJeQ6nIt3"
+      ],
+      "verseCount": 222,
+      "chapters": [
+        "recuWzq6lVIM0Ik6Z"
+      ],
+      "writers": [
+        "solomon_2762"
+      ],
+      "testament": "Old Testament",
+      "slug": "eccl",
+      "peopleCount": 37,
+      "placeCount": 5
+    }
+  },
+  {
+    "id": "recnUwcJABJVgZDCI",
+    "createdTime": "2018-05-22T19:36:23.000Z",
+    "fields": {
+      "osisName": "Song",
+      "bookName": "Song of Solomon",
+      "chapterCount": 8,
+      "bookDiv": "Poetry-Wisdom",
+      "shortName": "So",
+      "bookOrder": 22,
+      "verses": [
+        "rece8ON7oDIJwGFVQ"
+      ],
+      "verseCount": 117,
+      "chapters": [
+        "recVxN6RaimjF2UuX"
+      ],
+      "writers": [
+        "solomon_2762"
+      ],
+      "testament": "Old Testament",
+      "slug": "song",
+      "peopleCount": 9,
+      "placeCount": 21
+    }
+  },
+  {
+    "id": "recr2ic6Ws3R14a5I",
+    "createdTime": "2018-05-13T17:19:17.000Z",
+    "fields": {
+      "osisName": "Isa",
+      "bookName": "Isaiah",
+      "chapterCount": 66,
+      "bookDiv": "Major Prophets",
+      "shortName": "Is",
+      "bookOrder": 23,
+      "verses": [
+        "rec8FYqlhjFHJKevZ"
+      ],
+      "verseCount": 1292,
+      "chapters": [
+        "recStU2XGk8b6PoYs"
+      ],
+      "writers": [
+        "isaiah_617"
+      ],
+      "testament": "Old Testament",
+      "slug": "isa",
+      "peopleCount": 556,
+      "placeCount": 248
+    }
+  },
+  {
+    "id": "rec3jLxfw7hvvvw7J",
+    "createdTime": "2018-05-13T17:19:17.000Z",
+    "fields": {
+      "osisName": "Jer",
+      "bookName": "Jeremiah",
+      "chapterCount": 52,
+      "bookDiv": "Major Prophets",
+      "shortName": "Je",
+      "bookOrder": 24,
+      "verses": [
+        "recxjINW7fAurqWcD"
+      ],
+      "verseCount": 1364,
+      "chapters": [
+        "recPpD9bU4aQLXoZt"
+      ],
+      "writers": [
+        "jeremiah_853"
+      ],
+      "testament": "Old Testament",
+      "slug": "jer",
+      "peopleCount": 840,
+      "placeCount": 443
+    }
+  },
+  {
+    "id": "recdT4VI6VdkEzixN",
+    "createdTime": "2018-05-13T17:19:17.000Z",
+    "fields": {
+      "osisName": "Lam",
+      "bookName": "Lamentations",
+      "chapterCount": 5,
+      "bookDiv": "Poetry-Wisdom",
+      "shortName": "La",
+      "bookOrder": 25,
+      "verses": [
+        "recwksB7y7vYRXQZE"
+      ],
+      "verseCount": 154,
+      "chapters": [
+        "recdD0TKc7mI3uNCT"
+      ],
+      "writers": [
+        "jeremiah_853"
+      ],
+      "testament": "Old Testament",
+      "slug": "lam",
+      "peopleCount": 47,
+      "placeCount": 22
+    }
+  },
+  {
+    "id": "recqSg3DygQ97p2n7",
+    "createdTime": "2018-05-22T19:36:23.000Z",
+    "fields": {
+      "osisName": "Ezek",
+      "bookName": "Ezekiel",
+      "chapterCount": 48,
+      "bookDiv": "Major Prophets",
+      "shortName": "Eze",
+      "bookOrder": 26,
+      "verses": [
+        "rec2VSERixC0rK7BE"
+      ],
+      "verseCount": 1273,
+      "chapters": [
+        "rec9Id9FvFWZsCiP3"
+      ],
+      "writers": [
+        "ezekiel_1237"
+      ],
+      "testament": "Old Testament",
+      "slug": "ezek",
+      "peopleCount": 482,
+      "placeCount": 195
+    }
+  },
+  {
+    "id": "recJZDGEIEZOMQVFU",
+    "createdTime": "2018-05-13T17:19:17.000Z",
+    "fields": {
+      "osisName": "Dan",
+      "bookName": "Daniel",
+      "chapterCount": 12,
+      "bookDiv": "Major Prophets",
+      "shortName": "Da",
+      "bookOrder": 27,
+      "verses": [
+        "recJo1sTKEiCiOtl6"
+      ],
+      "verseCount": 357,
+      "chapters": [
+        "recmLiaKC4BlBgcJ6"
+      ],
+      "writers": [
+        "daniel_975"
+      ],
+      "testament": "Old Testament",
+      "slug": "dan",
+      "peopleCount": 158,
+      "placeCount": 40
+    }
+  },
+  {
+    "id": "rect9laYKg0Xd0Uzg",
+    "createdTime": "2018-05-13T17:19:17.000Z",
+    "fields": {
+      "osisName": "Hos",
+      "bookName": "Hosea",
+      "chapterCount": 14,
+      "bookDiv": "Minor Prophets",
+      "shortName": "Ho",
+      "bookOrder": 28,
+      "verses": [
+        "recn83TtFEfmCYPVW"
+      ],
+      "verseCount": 197,
+      "chapters": [
+        "recbMqY9XC3iTy7Eo"
+      ],
+      "writers": [
+        "hosea_1555"
+      ],
+      "testament": "Old Testament",
+      "slug": "hos",
+      "peopleCount": 95,
+      "placeCount": 44
+    }
+  },
+  {
+    "id": "recJhMBucEbOC6FyV",
+    "createdTime": "2018-05-22T19:36:23.000Z",
+    "fields": {
+      "osisName": "Joel",
+      "bookName": "Joel",
+      "chapterCount": 3,
+      "bookDiv": "Minor Prophets",
+      "shortName": "Joe",
+      "bookOrder": 29,
+      "verses": [
+        "rec6l4Iardk75VmJS"
+      ],
+      "verseCount": 73,
+      "chapters": [
+        "rechyIHsQA1aHYHvj"
+      ],
+      "writers": [
+        "joel_1660"
+      ],
+      "testament": "Old Testament",
+      "slug": "joel",
+      "peopleCount": 31,
+      "placeCount": 16
+    }
+  },
+  {
+    "id": "rec5weNA8SDG9Gk1x",
+    "createdTime": "2018-05-22T19:36:23.000Z",
+    "fields": {
+      "osisName": "Amos",
+      "bookName": "Amos",
+      "chapterCount": 9,
+      "bookDiv": "Minor Prophets",
+      "shortName": "Am",
+      "bookOrder": 30,
+      "verses": [
+        "recgGgXNbDGkuPtKM"
+      ],
+      "verseCount": 146,
+      "chapters": [
+        "recMNsXEXZGhaUWxF"
+      ],
+      "writers": [
+        "amos_238"
+      ],
+      "testament": "Old Testament",
+      "slug": "amos",
+      "peopleCount": 89,
+      "placeCount": 39
+    }
+  },
+  {
+    "id": "recVlXpkRK0TkcxFm",
+    "createdTime": "2018-05-22T19:36:23.000Z",
+    "fields": {
+      "osisName": "Obad",
+      "bookName": "Obadiah",
+      "chapterCount": 1,
+      "bookDiv": "Minor Prophets",
+      "shortName": "Ob",
+      "bookOrder": 31,
+      "verses": [
+        "recPzDNQ9bxXChhGD"
+      ],
+      "verseCount": 21,
+      "chapters": [
+        "recuRl2mIQ2E3O5ia"
+      ],
+      "writers": [
+        "obadiah_2226"
+      ],
+      "testament": "Old Testament",
+      "slug": "obad",
+      "peopleCount": 12,
+      "placeCount": 9
+    }
+  },
+  {
+    "id": "recHPjIgqDYfAbySY",
+    "createdTime": "2018-05-22T19:36:23.000Z",
+    "fields": {
+      "osisName": "Jonah",
+      "bookName": "Jonah",
+      "chapterCount": 4,
+      "bookDiv": "Minor Prophets",
+      "shortName": "Jon",
+      "bookOrder": 32,
+      "verses": [
+        "rec01vTTWV73yjA6Y"
+      ],
+      "verseCount": 48,
+      "chapters": [
+        "recfQpq6IfbfPnvAw"
+      ],
+      "writers": [
+        "jonah_1689"
+      ],
+      "testament": "Old Testament",
+      "slug": "jonah",
+      "peopleCount": 35,
+      "placeCount": 10
+    }
+  },
+  {
+    "id": "recA2CMdJWbqaoTA0",
+    "createdTime": "2018-05-13T17:19:17.000Z",
+    "fields": {
+      "osisName": "Mic",
+      "bookName": "Micah",
+      "chapterCount": 7,
+      "bookDiv": "Minor Prophets",
+      "shortName": "Mic",
+      "bookOrder": 33,
+      "verses": [
+        "recCa8zLvxdbK5ic5"
+      ],
+      "verseCount": 105,
+      "chapters": [
+        "recgtAFbPOHLarZPq"
+      ],
+      "writers": [
+        "micah_2053"
+      ],
+      "testament": "Old Testament",
+      "slug": "mic",
+      "peopleCount": 49,
+      "placeCount": 25
+    }
+  },
+  {
+    "id": "recQKyO5TMxwPm4Ky",
+    "createdTime": "2018-05-13T17:19:17.000Z",
+    "fields": {
+      "osisName": "Nah",
+      "bookName": "Nahum",
+      "chapterCount": 3,
+      "bookDiv": "Minor Prophets",
+      "shortName": "Na",
+      "bookOrder": 34,
+      "verses": [
+        "rec02EgC8o2FhCK4P"
+      ],
+      "verseCount": 47,
+      "chapters": [
+        "recH94xNn0RLK1KHF"
+      ],
+      "writers": [
+        "nahum_2145"
+      ],
+      "testament": "Old Testament",
+      "slug": "nah",
+      "peopleCount": 11,
+      "placeCount": 7
+    }
+  },
+  {
+    "id": "rectOGfyQI1dkl9Jy",
+    "createdTime": "2018-05-13T17:19:17.000Z",
+    "fields": {
+      "osisName": "Hab",
+      "bookName": "Habakkuk",
+      "chapterCount": 3,
+      "bookDiv": "Minor Prophets",
+      "shortName": "Hab",
+      "bookOrder": 35,
+      "verses": [
+        "recZecZq7GFjSkMut"
+      ],
+      "verseCount": 56,
+      "chapters": [
+        "recy9m5h2HIVdqmtm"
+      ],
+      "writers": [
+        "habakkuk_1334"
+      ],
+      "testament": "Old Testament",
+      "slug": "hab",
+      "peopleCount": 15,
+      "placeCount": 3
+    }
+  },
+  {
+    "id": "recRmQJUpakFullFM",
+    "createdTime": "2018-05-22T19:36:23.000Z",
+    "fields": {
+      "osisName": "Zeph",
+      "bookName": "Zephaniah",
+      "chapterCount": 3,
+      "bookDiv": "Minor Prophets",
+      "shortName": "Zep",
+      "bookOrder": 36,
+      "verses": [
+        "recxwLpAQ4fvcRRxi"
+      ],
+      "verseCount": 53,
+      "chapters": [
+        "recdpwqNwwulfFUzq"
+      ],
+      "writers": [
+        "zephaniah_3040"
+      ],
+      "testament": "Old Testament",
+      "slug": "zeph",
+      "peopleCount": 29,
+      "placeCount": 13
+    }
+  },
+  {
+    "id": "recieu3CSdcWH6rMj",
+    "createdTime": "2018-05-13T17:19:17.000Z",
+    "fields": {
+      "osisName": "Hag",
+      "bookName": "Haggai",
+      "chapterCount": 2,
+      "bookDiv": "Minor Prophets",
+      "shortName": "Hag",
+      "bookOrder": 37,
+      "verses": [
+        "recxUzIDzcDbaIESA"
+      ],
+      "verseCount": 38,
+      "chapters": [
+        "recDmg4smCLEkR1ED"
+      ],
+      "writers": [
+        "haggai_1349"
+      ],
+      "testament": "Old Testament",
+      "slug": "hag",
+      "peopleCount": 28,
+      "placeCount": 1
+    }
+  },
+  {
+    "id": "rec2EEptPS7M8gQC3",
+    "createdTime": "2018-05-22T19:36:23.000Z",
+    "fields": {
+      "osisName": "Zech",
+      "bookName": "Zechariah",
+      "chapterCount": 14,
+      "bookDiv": "Minor Prophets",
+      "shortName": "Zec",
+      "bookOrder": 38,
+      "verses": [
+        "recXxC6Jv3ZTAXI8w"
+      ],
+      "verseCount": 211,
+      "chapters": [
+        "recRFbcPnVUQNYnwL"
+      ],
+      "writers": [
+        "zechariah_3016"
+      ],
+      "testament": "Old Testament",
+      "slug": "zech",
+      "peopleCount": 120,
+      "placeCount": 58
+    }
+  },
+  {
+    "id": "recFNHNgEiPlhRRpQ",
+    "createdTime": "2018-05-13T17:19:17.000Z",
+    "fields": {
+      "osisName": "Mal",
+      "bookName": "Malachi",
+      "chapterCount": 4,
+      "bookDiv": "Minor Prophets",
+      "shortName": "Mal",
+      "bookOrder": 39,
+      "verses": [
+        "rec7EnTcacHMu8nXe"
+      ],
+      "verseCount": 55,
+      "chapters": [
+        "rec2OiKN1eC4I8Sd9"
+      ],
+      "writers": [
+        "malachi_1899"
+      ],
+      "testament": "Old Testament",
+      "slug": "mal",
+      "peopleCount": 47,
+      "placeCount": 4
+    }
+  },
+  {
+    "id": "recEJId5B98HV0x6D",
+    "createdTime": "2018-05-22T19:36:23.000Z",
+    "fields": {
+      "osisName": "Matt",
+      "bookName": "Matthew",
+      "chapterCount": 28,
+      "bookDiv": "Gospels",
+      "shortName": "Mt",
+      "bookOrder": 40,
+      "verses": [
+        "recdcfDhWb30qx5A9"
+      ],
+      "yearWritten": [
+        "recjz0yynf7rcdlXV"
+      ],
+      "verseCount": 1071,
+      "chapters": [
+        "rec7qtvOOctSDNom8"
+      ],
+      "writers": [
+        "matthew_1971"
+      ],
+      "testament": "New Testament",
+      "slug": "matt",
+      "peopleCount": 431,
+      "placeCount": 69
+    }
+  },
+  {
+    "id": "recNvq1wZtB13BbbW",
+    "createdTime": "2018-05-22T19:36:23.000Z",
+    "fields": {
+      "osisName": "Mark",
+      "bookName": "Mark",
+      "chapterCount": 16,
+      "bookDiv": "Gospels",
+      "shortName": "Mk",
+      "bookOrder": 41,
+      "verses": [
+        "recDClOHwXob7tIlQ"
+      ],
+      "yearWritten": [
+        "rec0A69638GHKV6ts"
+      ],
+      "verseCount": 678,
+      "chapters": [
+        "recTzsqcZeto3gXih"
+      ],
+      "writers": [
+        "mark_1679"
+      ],
+      "testament": "New Testament",
+      "slug": "mark",
+      "peopleCount": 245,
+      "placeCount": 46
+    }
+  },
+  {
+    "id": "recclIex2hH0wdTST",
+    "createdTime": "2018-05-22T19:36:23.000Z",
+    "fields": {
+      "osisName": "Luke",
+      "bookName": "Luke",
+      "chapterCount": 24,
+      "bookDiv": "Gospels",
+      "shortName": "Lu",
+      "bookOrder": 42,
+      "verses": [
+        "rec80EjBpcYgZkXJ8"
+      ],
+      "yearWritten": [
+        "recvOFi9OkrgM1IAO"
+      ],
+      "verseCount": 1151,
+      "chapters": [
+        "recT5jBeSTonVjPOv"
+      ],
+      "writers": [
+        "luke_1836"
+      ],
+      "testament": "New Testament",
+      "slug": "luke",
+      "peopleCount": 461,
+      "placeCount": 76
+    }
+  },
+  {
+    "id": "recq8W1kWwtVoUlwB",
+    "createdTime": "2018-05-22T19:36:23.000Z",
+    "fields": {
+      "osisName": "John",
+      "bookName": "John",
+      "chapterCount": 21,
+      "bookDiv": "Gospels",
+      "shortName": "Jn",
+      "bookOrder": 43,
+      "verses": [
+        "recWG76RF8wxD5zJB"
+      ],
+      "verseCount": 879,
+      "chapters": [
+        "recRewBbXS7mVg3NN"
+      ],
+      "writers": [
+        "john_1677"
+      ],
+      "testament": "New Testament",
+      "slug": "john",
+      "peopleCount": 514,
+      "placeCount": 62
+    }
+  },
+  {
+    "id": "recF09FMjRr0gzjQk",
+    "createdTime": "2018-05-22T19:36:23.000Z",
+    "fields": {
+      "osisName": "Acts",
+      "bookName": "Acts",
+      "chapterCount": 28,
+      "bookDiv": "Acts",
+      "shortName": "Ac",
+      "bookOrder": 44,
+      "verses": [
+        "recNbAWySV9eG8Eux"
+      ],
+      "yearWritten": [
+        "rec0kTOAllLvN855m"
+      ],
+      "verseCount": 1007,
+      "chapters": [
+        "recZAOjAUnGihkYVU"
+      ],
+      "writers": [
+        "luke_1836"
+      ],
+      "testament": "New Testament",
+      "slug": "acts",
+      "peopleCount": 592,
+      "placeCount": 244
+    }
+  },
+  {
+    "id": "recyvIyxRMFob6SoM",
+    "createdTime": "2018-05-13T17:19:17.000Z",
+    "fields": {
+      "osisName": "Rom",
+      "bookName": "Romans",
+      "chapterCount": 16,
+      "bookDiv": "Pauline Epistles",
+      "shortName": "Ro",
+      "bookOrder": 45,
+      "verses": [
+        "recld8Sxx8yDn1Ik8"
+      ],
+      "yearWritten": [
+        "recvOFi9OkrgM1IAO"
+      ],
+      "placeWritten": [
+        "recpmPd6JhbqhqA0Q"
+      ],
+      "verseCount": 433,
+      "chapters": [
+        "recMCMGLnVg4olx48"
+      ],
+      "writers": [
+        "paul_2479"
+      ],
+      "testament": "New Testament",
+      "slug": "rom",
+      "peopleCount": 238,
+      "placeCount": 13
+    }
+  },
+  {
+    "id": "recVtbTyqtbbtqRC5",
+    "createdTime": "2018-05-22T19:36:23.000Z",
+    "fields": {
+      "osisName": "1Cor",
+      "bookName": "1 Corinthians",
+      "chapterCount": 16,
+      "bookDiv": "Pauline Epistles",
+      "shortName": "1Co",
+      "bookOrder": 46,
+      "verses": [
+        "rec0yLwq3rSPsQC5r"
+      ],
+      "yearWritten": [
+        "rec51pkZxX5R68gKh"
+      ],
+      "placeWritten": [
+        "recBYO9ocr5Gssb47"
+      ],
+      "verseCount": 437,
+      "chapters": [
+        "recuM8o3MRRjsRpCa"
+      ],
+      "writers": [
+        "paul_2479"
+      ],
+      "testament": "New Testament",
+      "slug": "1cor",
+      "peopleCount": 192,
+      "placeCount": 8
+    }
+  },
+  {
+    "id": "rec0CTDRtMnNCmQr9",
+    "createdTime": "2018-05-22T19:36:23.000Z",
+    "fields": {
+      "osisName": "2Cor",
+      "bookName": "2 Corinthians",
+      "chapterCount": 13,
+      "bookDiv": "Pauline Epistles",
+      "shortName": "2Co",
+      "bookOrder": 47,
+      "verses": [
+        "recTgys1iuuYXWikh"
+      ],
+      "yearWritten": [
+        "rec51pkZxX5R68gKh"
+      ],
+      "placeWritten": [
+        "recly2TmP9CBHh8OQ"
+      ],
+      "verseCount": 257,
+      "chapters": [
+        "recikRt8RL0hvJ1Jr"
+      ],
+      "writers": [
+        "paul_2479"
+      ],
+      "testament": "New Testament",
+      "slug": "2cor",
+      "peopleCount": 122,
+      "placeCount": 12
+    }
+  },
+  {
+    "id": "recF3ilKWfSjLzpsj",
+    "createdTime": "2018-05-13T17:19:17.000Z",
+    "fields": {
+      "osisName": "Gal",
+      "bookName": "Galatians",
+      "chapterCount": 6,
+      "bookDiv": "Pauline Epistles",
+      "shortName": "Ga",
+      "bookOrder": 48,
+      "verses": [
+        "recwep11dNUMlk2Ki"
+      ],
+      "yearWritten": [
+        "reca2AmXo0bMJWIoP"
+      ],
+      "placeWritten": [
+        "recKAFuMIt8BAi2OH"
+      ],
+      "verseCount": 149,
+      "chapters": [
+        "recQzZJTHhuGShRKa"
+      ],
+      "writers": [
+        "paul_2479"
+      ],
+      "testament": "New Testament",
+      "slug": "gal",
+      "peopleCount": 87,
+      "placeCount": 10
+    }
+  },
+  {
+    "id": "rec3IwUp30NnnEqSL",
+    "createdTime": "2018-05-13T17:19:17.000Z",
+    "fields": {
+      "osisName": "Eph",
+      "bookName": "Ephesians",
+      "chapterCount": 6,
+      "bookDiv": "Pauline Epistles",
+      "shortName": "Eph",
+      "bookOrder": 49,
+      "verses": [
+        "rec1p1JVKaABeUCb1"
+      ],
+      "yearWritten": [
+        "rec0kTOAllLvN855m"
+      ],
+      "placeWritten": [
+        "recDDkVF36ecPUge4"
+      ],
+      "verseCount": 155,
+      "chapters": [
+        "recSLhSNy8htKWFjo"
+      ],
+      "writers": [
+        "paul_2479"
+      ],
+      "testament": "New Testament",
+      "slug": "eph",
+      "peopleCount": 88,
+      "placeCount": 1
+    }
+  },
+  {
+    "id": "recY95JJhNEzOwMNv",
+    "createdTime": "2018-05-22T19:36:23.000Z",
+    "fields": {
+      "osisName": "Phil",
+      "bookName": "Philippians",
+      "chapterCount": 4,
+      "bookDiv": "Pauline Epistles",
+      "shortName": "Php",
+      "bookOrder": 50,
+      "verses": [
+        "recA1CELqqhDExoq4"
+      ],
+      "yearWritten": [
+        "rec0kTOAllLvN855m"
+      ],
+      "placeWritten": [
+        "recDDkVF36ecPUge4"
+      ],
+      "verseCount": 104,
+      "chapters": [
+        "recPE8yUmP9V4utuG"
+      ],
+      "writers": [
+        "paul_2479"
+      ],
+      "testament": "New Testament",
+      "slug": "phil",
+      "peopleCount": 63,
+      "placeCount": 3
+    }
+  },
+  {
+    "id": "recY37UhYyyAlabnd",
+    "createdTime": "2018-05-13T17:19:17.000Z",
+    "fields": {
+      "osisName": "Col",
+      "bookName": "Colossians",
+      "chapterCount": 4,
+      "bookDiv": "Pauline Epistles",
+      "shortName": "Col",
+      "bookOrder": 51,
+      "verses": [
+        "recuJuitvGvn5pP49"
+      ],
+      "yearWritten": [
+        "rec0kTOAllLvN855m"
+      ],
+      "placeWritten": [
+        "recDDkVF36ecPUge4"
+      ],
+      "verseCount": 95,
+      "chapters": [
+        "rec6xVrkSz39SguDd"
+      ],
+      "writers": [
+        "paul_2479"
+      ],
+      "testament": "New Testament",
+      "slug": "col",
+      "peopleCount": 51,
+      "placeCount": 5
+    }
+  },
+  {
+    "id": "recDZc63lmQiSe0gn",
+    "createdTime": "2018-05-22T19:36:23.000Z",
+    "fields": {
+      "osisName": "1Thess",
+      "bookName": "1 Thessalonians",
+      "chapterCount": 5,
+      "bookDiv": "Pauline Epistles",
+      "shortName": "1Th",
+      "bookOrder": 52,
+      "verses": [
+        "recoZ6AogEfZAyDD4"
+      ],
+      "yearWritten": [
+        "reczWDEgXD69urVJe"
+      ],
+      "placeWritten": [
+        "recQThsW3uau1oxf9"
+      ],
+      "verseCount": 89,
+      "chapters": [
+        "reca5y8qrzew69WDL"
+      ],
+      "writers": [
+        "paul_2479"
+      ],
+      "testament": "New Testament",
+      "slug": "1thess",
+      "peopleCount": 49,
+      "placeCount": 6
+    }
+  },
+  {
+    "id": "recnZBkoT7W0SV19v",
+    "createdTime": "2018-05-22T19:36:23.000Z",
+    "fields": {
+      "osisName": "2Thess",
+      "bookName": "2 Thessalonians",
+      "chapterCount": 3,
+      "bookDiv": "Pauline Epistles",
+      "shortName": "2Th",
+      "bookOrder": 53,
+      "verses": [
+        "recyB3ziTbecRxeVS"
+      ],
+      "yearWritten": [
+        "reczWDEgXD69urVJe"
+      ],
+      "placeWritten": [
+        "recQThsW3uau1oxf9"
+      ],
+      "verseCount": 47,
+      "chapters": [
+        "recFIadWwNcwFQDsi"
+      ],
+      "writers": [
+        "paul_2479"
+      ],
+      "testament": "New Testament",
+      "slug": "2thess",
+      "peopleCount": 29,
+      "placeCount": 0
+    }
+  },
+  {
+    "id": "rec2yyoaHMOHZcynX",
+    "createdTime": "2018-05-22T19:36:23.000Z",
+    "fields": {
+      "osisName": "1Tim",
+      "bookName": "1 Timothy",
+      "chapterCount": 6,
+      "bookDiv": "Pauline Epistles",
+      "shortName": "1Ti",
+      "bookOrder": 54,
+      "verses": [
+        "reczffIIG1JpN2VRn"
+      ],
+      "yearWritten": [
+        "recZxgUO7sc80jQw2"
+      ],
+      "verseCount": 113,
+      "chapters": [
+        "rece7hdDGdaTeneok"
+      ],
+      "writers": [
+        "paul_2479"
+      ],
+      "testament": "New Testament",
+      "slug": "1tim",
+      "peopleCount": 38,
+      "placeCount": 1
+    }
+  },
+  {
+    "id": "rec28yVZWWOL1gftz",
+    "createdTime": "2018-05-22T19:36:23.000Z",
+    "fields": {
+      "osisName": "2Tim",
+      "bookName": "2 Timothy",
+      "chapterCount": 4,
+      "bookDiv": "Pauline Epistles",
+      "shortName": "2Ti",
+      "bookOrder": 55,
+      "verses": [
+        "recEoKSPGEH4ZZPFv"
+      ],
+      "yearWritten": [
+        "rec9aLhxhMi8yaVEO"
+      ],
+      "placeWritten": [
+        "recDDkVF36ecPUge4"
+      ],
+      "verseCount": 83,
+      "chapters": [
+        "recYXapOsOd17TzPR"
+      ],
+      "writers": [
+        "paul_2479"
+      ],
+      "testament": "New Testament",
+      "slug": "2tim",
+      "peopleCount": 47,
+      "placeCount": 8
+    }
+  },
+  {
+    "id": "recZJmtLFS2QnJG2b",
+    "createdTime": "2018-05-22T19:36:23.000Z",
+    "fields": {
+      "osisName": "Titus",
+      "bookName": "Titus",
+      "chapterCount": 3,
+      "bookDiv": "Pauline Epistles",
+      "shortName": "Tit",
+      "bookOrder": 56,
+      "verses": [
+        "recKC5GqYAYHo3rcW"
+      ],
+      "yearWritten": [
+        "recZxgUO7sc80jQw2"
+      ],
+      "verseCount": 46,
+      "chapters": [
+        "recut3mid3XomgMBP"
+      ],
+      "writers": [
+        "paul_2479"
+      ],
+      "testament": "New Testament",
+      "slug": "titus",
+      "peopleCount": 16,
+      "placeCount": 2
+    }
+  },
+  {
+    "id": "recZm66X4kEQ7X3j2",
+    "createdTime": "2018-05-22T19:36:23.000Z",
+    "fields": {
+      "osisName": "Phlm",
+      "bookName": "Philemon",
+      "chapterCount": 1,
+      "bookDiv": "Pauline Epistles",
+      "shortName": "Phm",
+      "bookOrder": 57,
+      "verses": [
+        "recZDi75YsEjiWPSZ"
+      ],
+      "yearWritten": [
+        "rec0kTOAllLvN855m"
+      ],
+      "placeWritten": [
+        "recDDkVF36ecPUge4"
+      ],
+      "verseCount": 25,
+      "chapters": [
+        "recZ2o7MAHvRBqvlF"
+      ],
+      "writers": [
+        "paul_2479"
+      ],
+      "testament": "New Testament",
+      "slug": "phlm",
+      "peopleCount": 15,
+      "placeCount": 0
+    }
+  },
+  {
+    "id": "recKvTNUismk1ckEr",
+    "createdTime": "2018-05-13T17:19:17.000Z",
+    "fields": {
+      "osisName": "Heb",
+      "bookName": "Hebrews",
+      "chapterCount": 13,
+      "bookDiv": "Pauline Epistles",
+      "shortName": "Heb",
+      "bookOrder": 58,
+      "verses": [
+        "recSwdcLttBTbQv4x"
+      ],
+      "yearWritten": [
+        "rec0A69638GHKV6ts"
+      ],
+      "verseCount": 303,
+      "chapters": [
+        "rec1NwCbwtBqJy07a"
+      ],
+      "writers": [
+        "paul_2479"
+      ],
+      "testament": "New Testament",
+      "slug": "heb",
+      "peopleCount": 139,
+      "placeCount": 11
+    }
+  },
+  {
+    "id": "recDk5A8p9VHMaXAC",
+    "createdTime": "2018-05-13T17:19:17.000Z",
+    "fields": {
+      "osisName": "Jas",
+      "bookName": "James",
+      "chapterCount": 5,
+      "bookDiv": "General Epistles",
+      "shortName": "Jas",
+      "bookOrder": 59,
+      "verses": [
+        "recMb3LQsSCZXUtuq"
+      ],
+      "yearWritten": [
+        "reczVV9M3tRmnrqVx"
+      ],
+      "verseCount": 108,
+      "chapters": [
+        "recLKdKz1PjbJNN3h"
+      ],
+      "writers": [
+        "james_719"
+      ],
+      "testament": "New Testament",
+      "slug": "jas",
+      "peopleCount": 29,
+      "placeCount": 0
+    }
+  },
+  {
+    "id": "receVE4rg7HzwRays",
+    "createdTime": "2018-05-22T19:36:23.000Z",
+    "fields": {
+      "osisName": "1Pet",
+      "bookName": "1 Peter",
+      "chapterCount": 5,
+      "bookDiv": "General Epistles",
+      "shortName": "1Pe",
+      "bookOrder": 60,
+      "verses": [
+        "reczkrSRLt8qSAS10"
+      ],
+      "yearWritten": [
+        "recw5eSM1t5luW1eR"
+      ],
+      "verseCount": 105,
+      "chapters": [
+        "recVZx7zfsoJWFIz7"
+      ],
+      "writers": [
+        "peter_2745"
+      ],
+      "testament": "New Testament",
+      "slug": "1pet",
+      "peopleCount": 56,
+      "placeCount": 3
+    }
+  },
+  {
+    "id": "recFNtUGO3RQUDGPv",
+    "createdTime": "2018-05-22T19:36:23.000Z",
+    "fields": {
+      "osisName": "2Pet",
+      "bookName": "2 Peter",
+      "chapterCount": 3,
+      "bookDiv": "General Epistles",
+      "shortName": "2Pe",
+      "bookOrder": 61,
+      "verses": [
+        "recJywfdv1mGv3bNH"
+      ],
+      "yearWritten": [
+        "rec0A69638GHKV6ts"
+      ],
+      "verseCount": 61,
+      "chapters": [
+        "recmu9PngE1C6rU9E"
+      ],
+      "writers": [
+        "peter_2745"
+      ],
+      "testament": "New Testament",
+      "slug": "2pet",
+      "peopleCount": 24,
+      "placeCount": 1
+    }
+  },
+  {
+    "id": "recnCKWpaf0b7Q1dy",
+    "createdTime": "2018-05-22T19:36:23.000Z",
+    "fields": {
+      "osisName": "1John",
+      "bookName": "1 John",
+      "chapterCount": 5,
+      "bookDiv": "General Epistles",
+      "shortName": "1Jn",
+      "bookOrder": 62,
+      "verses": [
+        "recBxujg9bNfrLm6a"
+      ],
+      "verseCount": 105,
+      "chapters": [
+        "recae9fsaMGJA5asr"
+      ],
+      "writers": [
+        "john_1677"
+      ],
+      "testament": "New Testament",
+      "slug": "1john",
+      "peopleCount": 61,
+      "placeCount": 0
+    }
+  },
+  {
+    "id": "recvfX2A1wSqR2QiC",
+    "createdTime": "2018-05-22T19:36:23.000Z",
+    "fields": {
+      "osisName": "2John",
+      "bookName": "2 John",
+      "chapterCount": 1,
+      "bookDiv": "General Epistles",
+      "shortName": "2Jn",
+      "bookOrder": 63,
+      "verses": [
+        "recVP0HSC2orFvKyq"
+      ],
+      "verseCount": 13,
+      "chapters": [
+        "recUpCj7orTNacVvx"
+      ],
+      "writers": [
+        "john_1677"
+      ],
+      "testament": "New Testament",
+      "slug": "2john",
+      "peopleCount": 6,
+      "placeCount": 0
+    }
+  },
+  {
+    "id": "recMApftYXBHE8lV5",
+    "createdTime": "2018-05-22T19:36:23.000Z",
+    "fields": {
+      "osisName": "3John",
+      "bookName": "3 John",
+      "chapterCount": 1,
+      "bookDiv": "General Epistles",
+      "shortName": "3Jn",
+      "bookOrder": 64,
+      "verses": [
+        "recQEgzU2qUisV8cc"
+      ],
+      "verseCount": 14,
+      "chapters": [
+        "recC7eHfosTXlVT5U"
+      ],
+      "writers": [
+        "john_1677"
+      ],
+      "testament": "New Testament",
+      "slug": "3john",
+      "peopleCount": 4,
+      "placeCount": 0
+    }
+  },
+  {
+    "id": "rec2ddtGk1mJxYoy4",
+    "createdTime": "2018-05-22T19:36:23.000Z",
+    "fields": {
+      "osisName": "Jude",
+      "bookName": "Jude",
+      "chapterCount": 1,
+      "bookDiv": "General Epistles",
+      "shortName": "Jud",
+      "bookOrder": 65,
+      "verses": [
+        "rec0qj5yU8vbP4wzJ"
+      ],
+      "verseCount": 25,
+      "chapters": [
+        "rec4EH7bV2nNDLQV9"
+      ],
+      "writers": [
+        "jude_1756"
+      ],
+      "testament": "New Testament",
+      "slug": "jude",
+      "peopleCount": 11,
+      "placeCount": 2
+    }
+  },
+  {
+    "id": "recUbhyLLUrl849r7",
+    "createdTime": "2018-05-13T17:19:17.000Z",
+    "fields": {
+      "osisName": "Rev",
+      "bookName": "Revelation",
+      "chapterCount": 22,
+      "bookDiv": "Revelation",
+      "shortName": "Re",
+      "bookOrder": 66,
+      "verses": [
+        "reclL7En6xCuYvcqQ"
+      ],
+      "verseCount": 404,
+      "chapters": [
+        "rec4IteMmrzJkGwvB"
+      ],
+      "writers": [
+        "john_1677"
+      ],
+      "testament": "New Testament",
+      "slug": "rev",
+      "peopleCount": 156,
+      "placeCount": 27
+    }
+  }
+]

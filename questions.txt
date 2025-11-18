@@ -11,3 +11,8 @@ Questions on places table
 1. Will documentation for "places" table exist even after the geoJSON efforts complete? 
 2. Is it correct that geoJSON places data does not need manual documentation because it already follows linked places format?
 
+### Questions
+1. How is termID and def_id calculated?
+
+### Observations
+1. "modified" column is in all tables except for "easton" table.
