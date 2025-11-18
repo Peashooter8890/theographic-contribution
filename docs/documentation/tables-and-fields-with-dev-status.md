@@ -138,7 +138,7 @@ Contains parsed entries from the XML version of Easton's Bible Dictionary. The d
 | partOf | Unknown | peopleGroups | Links a group to a larger group it is a part of (e.g., each of the twelve tribes of Israel is part of the "Nation of Israel" group). |
 | verses | Incomplete | verses | Verses mentioning this group |
 | events | Incomplete | events | Events in which this group participated. |
-| events_dev | Unknown | events | Links the group to relevant events. |
+| events_dev | Unknown | events | Links the group to IDs of relevant events. |
 | modified | Unknown |  | Last modified date and time |
 ---
 

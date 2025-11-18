@@ -1,1 +1,0 @@
-Events table's "rangeFlag"
