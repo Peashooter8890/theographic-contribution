@@ -326,7 +326,7 @@ This table provides a comprehensive catalog of every individual mentioned by nam
       "recfrXyxhuYOczKTm"
     ],
     "dictionaryLink": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/israel.html",
-    "dictionaryText": " the name conferred on Jacob after the great prayer-struggle at Peniel (  Genesis 32:28  ), because \"as a prince he had power with God and prevailed.\" (See  JACOB  .) This is the common name given to Jacob's descendants. *...(hidden for conciseness)*.",
+    "dictionaryText": " the name conferred on Jacob after the great prayer-struggle at Peniel (  Genesis 32:28  ), because \"as a prince he had power with God and prevailed.\" (See  JACOB  .) This is the common name given to Jacob's descendants.",
     "verseCount": 1009,
     "verses": [
       "recF0awhZCSb06TMf"
@@ -358,7 +358,7 @@ This table provides a comprehensive catalog of every individual mentioned by nam
     ],
     "Easton's Count": 1,
     "dictText": [
-      "One who follows on another’s heels; supplanter, ([Gen. 25:26](/gen#Gen.25.26); [27:36](/gen#Gen.27.36); [Hos. 12:2-4](/hos#Hos.12.2)), the second born of the twin sons of Isaac by Rebekah. He was born probably at Lahai-roi, when his father was fifty-nine and Abraham one hundred and fifty-nine years old. *...(hidden for conciseness)*"
+      "One who follows on another’s heels; supplanter, ([Gen. 25:26](/gen#Gen.25.26); [27:36](/gen#Gen.27.36); [Hos. 12:2-4](/hos#Hos.12.2)), the second born of the twin sons of Isaac by Rebekah. He was born probably at Lahai-roi, when his father was fifty-nine and Abraham one hundred and fifty-nine years old."
     ],
     "modified": "2020-09-07T01:31:05.000Z",
     "timeline": [
@@ -525,7 +525,6 @@ This table catalogs all geographic locations mentioned in the Bible. Each record
   "verses": [
     "recX74cRHwDmYb1sK",
     "recPMnvB1cd7AQgro",
-    ...
   ],
   "recogitoStatus": "VERIFIED",
   "recogitoLabel": "Egypt",
@@ -540,7 +539,7 @@ This table catalogs all geographic locations mentioned in the Bible. Each record
     "recaI03cdUrqCbVQE"
   ],
   "dictText": [
-    "The land of the Nile and the pyramids, the oldest kingdom of which we have any record, holds a place of great significance in Scripture. *...(hidden for conciseness)*"
+    "The land of the Nile and the pyramids, the oldest kingdom of which we have any record, holds a place of great significance in Scripture."
   ],
   "modified": "2021-05-06T20:48:10.000Z",
   "featureSubType": "Country",
@@ -558,10 +557,9 @@ This table catalogs all geographic locations mentioned in the Bible. Each record
   "eventsHere": [
     "recbqTND1uSdqNjOx",
     "recwCFb0NhrYMkl8t",
-    ...
   ],
   "dictionaryLink": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/egypt.html",
-  "dictionaryText": " the land of the Nile and the pyramids, the oldest kingdom of which we have any record, holds a place of great significance in Scripture. *...(hidden for conciseness)*",
+  "dictionaryText": " the land of the Nile and the pyramids, the oldest kingdom of which we have any record, holds a place of great significance in Scripture.",
   "recogitoComments": "Use this as a label but not the modern borders",
   "peopleBorn": [
     "recv0dAY2ULzJ687g",
