@@ -104,24 +104,26 @@ This table defines every chapter in the Bible. Each record links to its parent `
 ### Example
 ```json
 {
-  "osisRef": "1Chr.1",
-  "book": [
-    "rec2ZFQHqI4eUjhqX"
-  ],
-  "chapterNum": 1,
-  "writer": [
-    "recKCifIYcTXovrF4"
-  ],
-  "verses": [
-    "recIJ14BlamQIvokW",
-    "recMeUNvOQWjYQOFE",
-    ...
-  ],
-  "slug": "1chr_1",
-  "peopleCount": 54,
-  "placesCount": 8,
-  "modified": "2019-08-08T01:43:21.000Z",
-  "writer count": 1
+  "id": "recViIBdFQyyJQtzE",
+  "createdTime": "2018-06-01T13:12:45.000Z",
+  "fields": {
+    "osisRef": "Gen.1",
+    "book": [
+      "recIFusdNl6d8dj3L"
+    ],
+    "chapterNum": 1,
+    "writer": [
+      "recjNRR60PAuFtjha"
+    ],
+    "verses": [
+      "rec7mkRLwey2ntUG9"
+    ],
+    "slug": "gen_1",
+    "peopleCount": 26,
+    "placesCount": 0,
+    "modified": "2019-08-08T01:43:21.000Z",
+    "writer count": 1
+  }
 }
 ```
 ## Easton
@@ -151,22 +153,23 @@ This table contains parsed entries from the 1897 Easton's Bible Dictionary. Each
 ### Example
 ```json
 {
-  "dictLookup": "Abdon 4",
-  "termID": "a-p21.2",
-  "termLabel": "Abdon",
-  "def_id": "a-p21.3",
-  "has_list": "True",
-  "itemNum": 4,
-  "matchType": "multi",
-  "matchSlugs": "['abdon_3', 'abdon_11']",
-  "dictText": "One of the “sons” of Shashak ([1 Chr. 8:23](/1chr#1Chr.8.23)).\n\n This is the name also of a Levitical town of the Gershonites, in the tribe of Asher ([Josh. 21:30](/josh#Josh.21.30); [1 Chr. 6:74](/1chr#1Chr.6.74)). The ruins of Abdeh, some 8 miles north-east of Accho, probably mark its site.",
-  "personLookup": [
-    "recJoOUIhbhMXSf5Y"
-  ],
-  "placeLookup": [
-    "recPdJgyI1kRUNw35"
-  ],
-  "index": 21
+  "id": "recwNJZnKaFjnRShm",
+  "createdTime": "2019-07-08T22:44:33.000Z",
+  "fields": {
+    "dictLookup": "Joseph 4",
+    "termID": "j-p441.3",
+    "termLabel": "Joseph",
+    "def_id": "j-p441.4",
+    "has_list": "True",
+    "itemNum": 4,
+    "matchType": "person",
+    "matchSlugs": "joseph_1715",
+    "dictText": "The foster-father of our Lord ([Matt. 1:16](/matt#Matt.1.16); [Luke 3:23](/luke#Luke.3.23)). He lived at Nazareth in Galilee ([Luke 2:4](/luke#Luke.2.4)). He is called a “just man.” He was by trade a carpenter ([Matt. 13:55](/matt#Matt.13.55)). He is last mentioned in connection with the journey to Jerusalem, when Jesus was twelve years old. It is probable that he died before Jesus entered on his public ministry. This is concluded from the fact that Mary only was present at the marriage feast in Cana of Galilee. His name does not appear in connection with the scenes of the crucifixion along with that of Mary (q.v.), [John 19:25](/john#John.19.25).",
+    "personLookup": [
+      "recz2xTRGz9XZD6dT"
+    ],
+    "index": 3595
+  }
 }
 ```
 
@@ -209,38 +212,30 @@ This table chronicles the timeline of Biblical events. Each record details a spe
 ### Example
 ```json
 {
-  "title": "Birth of Abraham",
-  "startDate": "-1996",
-  "duration": "1D",
-  "participants": [
-    "reccdFYIq50NyxNej",
-    "recXBYSWubfkpqNQm"
-  ],
-  "verses": [
-    "rec4ayUcZnUN9fhUl",
-    "recuJqyP43vbWJbzj"
-  ],
-  "verseSort": "01011026",
-  "modified": "2020-11-25T15:12:15.000Z",
-  "sortKey": -1995.98988974,
-  "people (from verses)": [
-    "recXBYSWubfkpqNQm",
-    "reccdFYIq50NyxNej",
-    ...
-  ],
-  "eventID": 65,
-  "locations": [
-    "recgQtoCtBjbsPwAw"
-  ],
-  "partOf": [
-    "recfnatCOLEHFYeLB"
-  ],
-  "predecessor": [
-    "recePREjv2zZ8Esoo"
-  ],
-  "lag": "130Y",
-  "lagType": "FS",
-  "notes": "Not all of Terah's sons would have been born the same year. In light of Acts 7:4 and Genesis 12:4, Abraham was born when Terah was 130 years old.\n"
+  "id": "recy4o2BxavybTuX6",
+  "createdTime": "2020-08-27T01:17:11.000Z",
+  "fields": {
+    "title": "Tower of Babel",
+    "startDate": "-2245",
+    "duration": "1D",
+    "locations": [
+      "recO7At5WvGRe0Xsu"
+    ],
+    "verses": [
+      "recLJMCOtNOhHq9Rq"
+    ],
+    "verseSort": "01011001",
+    "modified": "2020-11-25T15:12:15.000Z",
+    "sortKey": -2244.98988999,
+    "places (from verses)": [
+      "rechl3VIoaKFb2C9f"
+    ],
+    "rangeFlag": true,
+    "people (from verses)": [
+      "reccZB8SVU5bEMcgo"
+    ],
+    "eventID": 53
+  }
 }
 ```
 ## People (38 Fields)
@@ -310,76 +305,66 @@ This table provides a comprehensive catalog of every individual mentioned by nam
 ### Example
 ```json
 {
-  "personLookup": "joseph_1710",
-  "personID": 1710,
-  "name": "Joseph",
-  "isProperName": true,
-  "gender": "Male",
-  "birthYear": [
-    "recwuinZnl42NLcM4"
-  ],
-  "deathYear": [
-    "reczIlmyAUfTRS1XO"
-  ],
-  "memberOf": [
-    "rec4hpOWgtnNNXWSJ"
-  ],
-  "birthPlace": [
-    "recfrXyxhuYOczKTm"
-  ],
-  "deathPlace": [
-    "recfrXyxhuYOczKTm"
-  ],
-  "dictionaryLink": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/joseph.html",
-  "dictionaryText": " remover or increaser. The elder of the two sons of Jacob by Rachel (  Genesis 30:23   Genesis 30:24  ), *...(hidden for conciseness)*",
-  "verseCount": 199,
-  "verses": [
-    "recry3sM59m5pfdr2",
-    "reckxubjFXOC3zchS",
-    ...
-  ],
-  "siblings": [
-    "recBOUtTncbBlfEn9"
-  ],
-  "halfSiblingsSameFather": [
-    "rectGDQCkKqZ6LgGB",
-    "rec3HzZknu1HOvNci",
-    ...
-  ],
-  "mother": [
-    "recT2Tm2K5XORGnbx"
-  ],
-  "father": [
-    "recsU2ZSdzBvDqzgI"
-  ],
-  "children": [
-    "rec1YbscOE9IyJ5ey",
-    "recEtv9ql7Hh4XAW4"
-  ],
-  "minYear": -1752,
-  "maxYear": 96,
-  "displayTitle": "Joseph (son of Jacob)",
-  "status": "publish",
-  "alphaGroup": "J",
-  "slug": "joseph_1710",
-  "partners": [
-    "recNkoJz33pFlgcn2"
-  ],
-  "alsoCalled": "Zaphnath-paaneah",
-  "Disambiguation (temp)": "Joseph(The sons of Rachel)",
-  "eastons": [
-    "rec1hmENiT7j0psby"
-  ],
-  "Easton's Count": 1,
-  "dictText": [
-    "The elder of the two sons of Jacob by Rachel ([Gen. 30:23](/gen#Gen.30.23), [24](/gen#Gen.30.24)), who, on the occasion of his birth, said, *...(hidden for conciseness)*"
-  ],
-  "modified": "2021-01-06T20:45:33.000Z",
-  "timeline": [
-    "recZDLkLCBpaZjV7D",
-    "recj8qDYwzBEfwBAa",
-    ...
-  ]
+  "id": "recsU2ZSdzBvDqzgI",
+  "createdTime": "2018-03-19T00:26:39.000Z",
+  "fields": {
+    "personLookup": "israel_682",
+    "personID": 682,
+    "name": "Israel",
+    "isProperName": true,
+    "gender": "Male",
+    "birthYear": [
+      "recz75OtTAGsJtzXb"
+    ],
+    "deathYear": [
+      "recI6wOLkJOEWZhcL"
+    ],
+    "memberOf": [
+      "rechHR2dYztVvgNWa"
+    ],
+    "deathPlace": [
+      "recfrXyxhuYOczKTm"
+    ],
+    "dictionaryLink": "https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary/israel.html",
+    "dictionaryText": " the name conferred on Jacob after the great prayer-struggle at Peniel (  Genesis 32:28  ), because \"as a prince he had power with God and prevailed.\" (See  JACOB  .) This is the common name given to Jacob's descendants. *...(hidden for conciseness)*.",
+    "verseCount": 1009,
+    "verses": [
+      "recF0awhZCSb06TMf"
+    ],
+    "siblings": [
+      "recUQWSZuOecG4z1Q"
+    ],
+    "mother": [
+      "recZb9e7YIG9qh2qX"
+    ],
+    "father": [
+      "recqIoG1fkaNWJ1y0"
+    ],
+    "children": [
+      "recDggWlQNbxJLalN"
+    ],
+    "minYear": -1853,
+    "maxYear": 96,
+    "displayTitle": "Jacob (Israel)",
+    "status": "publish",
+    "alphaGroup": "I",
+    "slug": "israel_682",
+    "partners": [
+      "recdaqUcGEFXwM0Ml"
+    ],
+    "alsoCalled": "Israel",
+    "eastons": [
+      "recPxmjv7HmVeGVSD"
+    ],
+    "Easton's Count": 1,
+    "dictText": [
+      "One who follows on another’s heels; supplanter, ([Gen. 25:26](/gen#Gen.25.26); [27:36](/gen#Gen.27.36); [Hos. 12:2-4](/hos#Hos.12.2)), the second born of the twin sons of Isaac by Rebekah. He was born probably at Lahai-roi, when his father was fifty-nine and Abraham one hundred and fifty-nine years old. *...(hidden for conciseness)*"
+    ],
+    "modified": "2020-09-07T01:31:05.000Z",
+    "timeline": [
+      "recAyNphNXcFdeBdv"
+    ]
+  }
 }
 ```
 
@@ -407,21 +392,19 @@ This table defines collective groups of people, such as tribes, nations, or fami
 ### Example
 ```json
 {
-  "groupName": "Tribe of Judah",
-  "members": [
-    "recYIZfi53zX3NJh0",
-    "recEg9i0J2MgmkZr8",
-    ...
-  ],
-  "verses": [
-    "recDl7QYLCsVnnMwn"
-  ],
-  "modified": "2020-09-07T20:00:01.000Z",
-  "events_dev": [
-    "recjkmUO88wihv8Ci",
-    "recr71Fz4NHTnGLJ2",
-    "recSF4lyBebGjJEXI"
-  ]
+  "id": "recb9l9ttaZlODOFV",
+  "createdTime": "2018-08-20T16:34:00.000Z",
+  "fields": {
+    "groupName": "Apostles (The Eleven)",
+    "members": [
+      "recX9MMADoVI2CSP1"
+    ],
+    "events": "The Holy Spirit is promised, Jesus ascends to Heaven, Matthias replaces Judas",
+    "modified": "2025-08-21T23:23:51.000Z",
+    "events_dev": [
+      "recvfB75N6vrQwhWW"
+    ]
+  }
 }
 ```
 
@@ -450,16 +433,19 @@ This table organizes the Biblical timeline into discrete years. Each record repr
 ### Example
 ```json
 {
-  "yearNum": "-4004",
-  "peopleBorn": [
-    "recyYgUiSETdWFgEP",
-    "recXhV7rg0zIf4OIB"
-  ],
-  "events": "God creates all things, God creates man and woman, Man falls into sin",
-  "isoYear": -4003,
-  "BC-AD": "BC",
-  "formattedYear": "4004 BC",
-  "modified": "2023-12-02T23:09:33.000Z"
+  "id": "recPI0EyJYFA3IUUZ",
+  "createdTime": "2018-04-28T22:40:37.000Z",
+  "fields": {
+    "yearNum": "-4004",
+    "peopleBorn": [
+      "recyYgUiSETdWFgEP"
+    ],
+    "events": "God creates all things, God creates man and woman, Man falls into sin",
+    "isoYear": -4003,
+    "BC-AD": "BC",
+    "formattedYear": "4004 BC",
+    "modified": "2023-12-02T23:09:33.000Z"
+  }
 }
 ```
 
