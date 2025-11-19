@@ -16,6 +16,7 @@ If your database is capable of importing nested JSON objects, the files in the j
 
 ## Learn More
 [✍Contributing](https://theographic.notion.site/Contributing-ab417439cabb4b22a241e19184660eb7?pvs=25)
+
 [📰Articles](https://theographic.notion.site/Articles-41ac2e70f3d742a0921f9dec95fdfe99?pvs=25)
 
 ## Contact
