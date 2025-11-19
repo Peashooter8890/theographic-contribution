@@ -39,7 +39,7 @@ This table contains high-level metadata for each of the 66 books in the Protesta
 ### Relationships
 - `verses` → References field `id` of `verses` table records
 - `yearWritten` → References field `id` of `periods` table
-- `placeWritten` → References field `id` `places` table
+- `placeWritten` → References field `id` of `places` table
 - `chapters` → References field `id` of `chapters` table records
 - `writers` → References subfield `personLookup` of field `fields` of `people` table records
 
