@@ -30,12 +30,11 @@ This table contains high-level metadata for each of the 66 books in the Protesta
 | `placeWritten` | array | Incomplete | Place the book was written, if known. |
 
 ### Relationships
-**TODO add what field it references, not all reference pure id**
-- `verses` → References `verses` table records
-- `chapters` → References `chapters` table records
-- `writers` → References `people` table records
-- `yearWritten` → References `periods` table
-- `placeWritten` → References `places` table
+- `verses` → References field `id` of `verses` table records
+- `chapters` → References field `id` of `chapters` table records
+- `writers` → References subfield `personLookup` of field `fields` of `people` table records
+- `yearWritten` → References field `id` of `periods` table
+- `placeWritten` → References field `id` `places` table
 
 ### Example
 ```json
@@ -91,9 +90,9 @@ This table defines every chapter in the Bible. Each record links to its parent `
 | `writer count`| integer | Validated | Total number of writers for the chapter |
 
 ### Relationships
-- `book` → References `books` table records
-- `writer` → References `people` table records
-- `verses` → References `verses` table records
+- `book` → References field `id` of `books` table records
+- `writer` → References field `id` of `people` table records
+- `verses` → References field `id` of `verses` table records
 
 ### Example
 ```json
@@ -139,8 +138,8 @@ This table contains parsed entries from the 1897 Easton's Bible Dictionary. Each
 | `placeLookup` | array | Populated | Links to the "places" table |
 
 ### Relationships
-- `personLookup` → References `people` table records
-- `placeLookup` → References `places` table records
+- `personLookup` → References field `id` of `people` table records
+- `placeLookup` → References field `id` of `places` table records
 
 ### Example
 ```json
@@ -192,13 +191,13 @@ This table chronicles the timeline of Biblical events. Each record details a spe
 | `groups` | array | Unknown | Groups of people involved in the event. |
 
 ### Relationships
-- `predecessor` → References `events` table records
-- `partOf` → References `events` table records
-- `participants` → References `people` table records
-- `locations` → References `places` table records
-- `verses` → References `verses` table records
-- `people (from verses)` → References `people` table records
-- `places (from verses)` → References `places` table records
+- `predecessor` → References field `id` of `events` table records
+- `partOf` → References field `id` of `events` table records
+- `participants` → References field `id` of `people` table records
+- `locations` → References field `id` of `places` table records
+- `verses` → References field `id` of `verses` table records
+- `people (from verses)` → References field `id` of `people` table records
+- `places (from verses)` → References field `id` of `places` table records
 
 ### Example
 ```json
@@ -276,7 +275,7 @@ This table provides a comprehensive catalog of every individual mentioned by nam
 | `timeline` | array | Unknown | Links to events for the person. |
 | `ambiguous` | boolean | Temporary | Identifies display titles which have not been edited for disambiguation. |
 | `Disambiguation (temp)` | string | Temporary | Mechanical Turk entries used to aid in disambiguation |
-| `events` | string | Incomplete | Events in which the person participated. Complete for the book of Acts |
+| `events` | string | Incomplete | Title of events in which the person participated. Complete for the book of Acts |
 | `alsoCalled` | string | Populated | Alternate spellings or other known names for the same person. |
 | `halfSiblingsSameMother` | array | Validated | Links to the person's maternal half-siblings. |
 | `halfSiblingsSameFather` | array | Validated | Links to the person's paternal half-siblings. |
@@ -284,23 +283,22 @@ This table provides a comprehensive catalog of every individual mentioned by nam
 | `surname` | string | Validated | Surname, if known. |
 
 ### Relationships
-- `birthYear` → References `events` table
-- `deathYear` → References `events` table
-- `memberOf` → References `peopleGroups` table records
-- `birthPlace` → References `places` table records
-- `deathPlace` → References `places` table records
-- `verses` → References `verses` table records
-- `siblings` → References `people` table records
-- `mother` → References `people` table records
-- `father` → References `people` table records
-- `children` → References `people` table records
-- `partners` → References `people` table records
-- `eastons` → References `easton` table records
-- `timeline` → References `events` table records
-- `events` → References `events` table records
-- `halfSiblingsSameMother` → References `people` table records
-- `halfSiblingsSameFather` → References `people` table records
-- `chaptersWritten` → References `people` table records
+- `birthYear` → References field `id` of `events` table
+- `deathYear` → References field `id` of `events` table
+- `memberOf` → References field `id` of `peopleGroups` table records
+- `birthPlace` → References field `id` of `places` table records
+- `deathPlace` → References field `id` of `places` table records
+- `verses` → References field `id` of `verses` table records
+- `siblings` → References field `id` of `people` table records
+- `mother` → References field `id` of `people` table records
+- `father` → References field `id` of `people` table records
+- `children` → References field `id` of `people` table records
+- `partners` → References field `id` of `people` table records
+- `eastons` → References field `id` of `easton` table records
+- `timeline` → References field `id` of `events` table records
+- `halfSiblingsSameMother` → References field `id` of `people` table records
+- `halfSiblingsSameFather` → References field `id` of `people` table records
+- `chaptersWritten` → References field `id` of `people` table records
 
 ### Example
 ```json
@@ -394,11 +392,10 @@ This table defines collective groups of people, such as tribes, nations, or fami
 | `events` | string | Incomplete | Events in which this group participated. |
 
 ### Relationships
-- `members` → References `people` table records
-- `partOf` → References `peopleGroups` table records
-- `verses` → References `verses` table records
-- `events` → References `events` table records
-- `events_dev` → References `events` table records
+- `members` → References field `id` of `people` table records
+- `partOf` → References field `id` of `peopleGroups` table records
+- `verses` → References field `id` of `verses` table records
+- `events_dev` → References field `id` of `events` table records
 
 ### Example
 ```json
@@ -430,7 +427,7 @@ This table organizes the Biblical timeline into discrete years. Each record repr
 |-------|------|--------|-------------|
 | `yearNum` | string | Incomplete | Integer for the year where negative values indicate BC, positive indicates AD |
 | `peopleBorn` | array | Incomplete | People born that year, if known. |
-| `events` | string | Incomplete | Events which occurred in that year. Complete for the book of Acts. |
+| `events` | string | Incomplete | Title of events which occurred in that year. Complete for the book of Acts. |
 | `isoYear` | integer | Validated | ISO-8601 standard year number (accounts for the non-existence of year 0) |
 | `BC-AD` | string | Incomplete | Groups AD and BC years |
 | `formattedYear` | string | Validated | Formatted string for the year and AD/BC designation |
@@ -439,10 +436,9 @@ This table organizes the Biblical timeline into discrete years. Each record repr
 | `booksWritten` | array | Incomplete | Books of the bible written that year, if known. |
 
 ### Relationships
-- `peopleBorn` → References `people` table records
-- `events` → References `events` table records
-- `peopleDied` → References `people` table records
-- `booksWritten` → References `books` table records
+- `peopleBorn` → References field `id` of `people` table records
+- `peopleDied` → References field `id` of `people` table records
+- `booksWritten` → References field `id` of `books` table records
 
 ### Example
 ```json
@@ -509,15 +505,14 @@ This table catalogs all geographic locations mentioned in the Bible. Each record
 | `peopleBorn` | array | Validated | People born here, where known |
 
 ### Relationships
-- `verses` → References `verses` table records
-- `eastons` → References `easton` table records
-- `dictText` → References `easton` table records
-- `peopleDied` → References `people` table records
-- `hasBeenHere` → References `people` table records
-- `eventsHere` → References `events` table records
-- `booksWritten` → References `books` table records
-- `duplicate_of` → References `places` table records
-- `peopleBorn` → References `people` table records
+- `verses` → References field `id` of `verses` table records
+- `eastons` → References field `id` of `easton` table records
+- `peopleDied` → References field `id` of `people` table records
+- `hasBeenHere` → References subfield `personLookup` of field `fields` of `people` table records
+- `eventsHere` → References field `id` of `events` table records
+- `booksWritten` → References field `id` of `books` table records
+- `duplicate_of` → References field `id` of `places` table records
+- `peopleBorn` → References field `id` of `people` table records
 
 ### Example
 ```json
@@ -610,12 +605,12 @@ This table contains the full text of every verse in the King James Version (`ver
 | `peopleGroups` | array | Incomplete | Groups of people mentioned in the verse text |
 
 ### Relationships
-- `book` → References `books` table records
-- `people` → References `people` table records
-- `places` → References `places` table records
-- `chapter` → References `chapters` table records
-- `peopleGroups` → References `peopleGroups` table records
-- `event` → References `events` table records
+- `book` → References field `id` of `books` table records
+- `people` → References field `id` of `people` table records
+- `places` → References field `id` of `places` table records
+- `chapter` → References field `id` of `chapters` table records
+- `peopleGroups` → References field `id` of `peopleGroups` table records
+- `event` → References field `id` of `events` table records
 
 ### Example
 ```json
