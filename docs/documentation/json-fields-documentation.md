@@ -140,9 +140,9 @@ This table contains parsed entries from the 1897 Easton's Bible Dictionary. Each
 | `matchType` | string | Temporary | Used to validate scripts which automatically match entities. |
 | `matchSlugs` | string | Temporary | Used to check automatically matched slugs of entities in other tables |
 | `dictText` | string | Validated | Text of the dictionary entry |
-| `index` | integer | Validated | Unique identifier |
 | `personLookup` | array | Populated | Links to the "people" table |
 | `placeLookup` | array | Populated | Links to the "places" table |
+| `index` | integer | Validated | Unique identifier |
 
 ### Relationships
 - `personLookup` → References field `id` of `people` table records
@@ -181,30 +181,30 @@ This table chronicles the timeline of Biblical events. Each record details a spe
 | `startDate` | string | Incomplete | ISO formatted date to identify calendar dates where known |
 | `duration` | string | Incomplete | Event length in days, years, etc. for use in end date calculations |
 | `participants` | array | Incomplete | Links people involved in the event |
+| `locations` | array | Incomplete | Links to place records where the event took place |
 | `verses` | array | Incomplete | Verses which serve as an original narrative for the event |
+| `predecessor` | array | Incomplete | Establishes predecessor-successor constraints if applicable |
+| `lag` | string | Unknown | The time elapsed between the predecessor event and the current event. |
+| `partOf` | array | Unknown | Links an event to a larger event that it is a part of. |
+| `notes` | string | Unknown | A field for additional commentary or explanatory notes about the event. |
 | `verseSort` | string | Unknown | The `verseID` of the first verse in the `verses` field of this event. |
+| `groups` | array | Unknown | Groups of people involved in the event. |
 | `modified` | string | Unknown | Last modified date and time |
 | `sortKey` | float | Incomplete | Uses a combination of year and verseSort to sort all events chronolgically. The calculation formula, originated in airtable, is `INT(IF(LEFT(startDate,1)='-',LEFT(startDate,5),LEFT(startDate,4))) + INT(verseSort)/100000000`|
-| `people (from verses)` | array | Unknown | People who are mentioned in the verses associated with the event. |
-| `eventID` | integer | Unknown | Unique identifier |
-| `locations` | array | Incomplete | Links to place records where the event took place |
-| `partOf` | array | Unknown | Links an event to a larger event that it is a part of. |
 | `places (from verses)` | array | Unknown | Locations that are mentioned in the verses associated with the event. |
-| `predecessor` | array | Incomplete | Establishes predecessor-successor constraints if applicable |
 | `rangeFlag` | boolean | Unknown | |
-| `lag` | string | Unknown | The time elapsed between the predecessor event and the current event. |
+| `people (from verses)` | array | Unknown | People who are mentioned in the verses associated with the event. |
 | `lagType` | string | Unknown | The type of predecessor relationship - either Start-to-Start (SS) or Finish-to-Start (FS). For example, for an event with lag of 130Y, lagType `FS` means that the event started 130 years after the predecessor event finished, whereas lagType `SS` means that the event started 130 years after the predecessor event started.|
-| `notes` | string | Unknown | A field for additional commentary or explanatory notes about the event. |
-| `groups` | array | Unknown | Groups of people involved in the event. |
+| `eventID` | integer | Unknown | Unique identifier |
 
 ### Relationships
-- `predecessor` → References field `id` of `events` table records
-- `partOf` → References field `id` of `events` table records
 - `participants` → References field `id` of `people` table records
 - `locations` → References field `id` of `places` table records
 - `verses` → References field `id` of `verses` table records
-- `people (from verses)` → References field `id` of `people` table records
+- `predecessor` → References field `id` of `events` table records
+- `partOf` → References field `id` of `events` table records
 - `places (from verses)` → References field `id` of `places` table records
+- `people (from verses)` → References field `id` of `people` table records
 
 ### Example
 ```json
@@ -253,6 +253,7 @@ This table provides a comprehensive catalog of every individual mentioned by nam
 | `personLookup` | string | Validated | Unique identifier using name and ID number |
 | `personID` | integer | Validated | Unique numerical identifier, helping to distinguish people with the same name. |
 | `name` | string | Validated | Primary name used in the text of the KJV |
+| `surname` | string | Validated | Surname, if known. |
 | `isProperName` | boolean | Validated | Identifies those with proper names vs. descriptive names like "Wife of..." or "Son of..." |
 | `gender` | string | Validated | Male or Female |
 | `birthYear` | array | Populated | Not yet aligned with passage/event timelines |
@@ -262,9 +263,13 @@ This table provides a comprehensive catalog of every individual mentioned by nam
 | `deathPlace` | array | Validated | Links to place records where the death location is known |
 | `dictionaryLink` | string | Unknown | A URL to its Easton's Bible Dictionary entry at https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary. |
 | `dictionaryText` | string | Unknown | The text content from its Easton's Bible Dictionary entry. |
+| `events` | string | Incomplete | Title of events in which the person participated. Complete for the book of Acts |
 | `verseCount` | integer | Validated | Counts verses where the person is mentioned by name |
 | `verses` | array | Validated | Verses where the person is mentioned by name |
 | `siblings` | array | Validated | Links to the person's full siblings. |
+| `halfSiblingsSameMother` | array | Validated | Links to the person's maternal half-siblings. |
+| `halfSiblingsSameFather` | array | Validated | Links to the person's paternal half-siblings. |
+| `chaptersWritten` | array | Validated | Specific chapters written by this person according to traditional understanding of authorship. |
 | `mother` | array | Validated | Links to the person's mother. |
 | `father` | array | Validated | Links to the person's father. |
 | `children` | array | Validated | Links to the person's children. |
@@ -275,19 +280,14 @@ This table provides a comprehensive catalog of every individual mentioned by nam
 | `alphaGroup` | string | Validated | Used for alphabetical indexing |
 | `slug` | string | Validated | Lowercase, url-friendly version of personLookup |
 | `partners` | array | Unknown | Links to the person's spouse or partner. |
+| `alsoCalled` | string | Populated | Alternate spellings or other known names for the same person. |
+| `ambiguous` | boolean | Temporary | Identifies display titles which have not been edited for disambiguation. |
+| `Disambiguation (temp)` | string | Temporary | Mechanical Turk entries used to aid in disambiguation |
 | `eastons` | array | Incomplete | Links to relevant sub-sections in Easton's dictionary. Complete for the book of Acts |
 | `Easton's Count` | integer | Unknown | 1 if it exists as an entry in Easton's Bible Dictionary; 0 otherwise.|
 | `dictText` | array | Incomplete | Markdown-formatted text from relevant sub-section in Easton's dictionary. |
 | `modified` | string | Unknown | Last modified date and time |
 | `timeline` | array | Unknown | Links to events for the person. |
-| `ambiguous` | boolean | Temporary | Identifies display titles which have not been edited for disambiguation. |
-| `Disambiguation (temp)` | string | Temporary | Mechanical Turk entries used to aid in disambiguation |
-| `events` | string | Incomplete | Title of events in which the person participated. Complete for the book of Acts |
-| `alsoCalled` | string | Populated | Alternate spellings or other known names for the same person. |
-| `halfSiblingsSameMother` | array | Validated | Links to the person's maternal half-siblings. |
-| `halfSiblingsSameFather` | array | Validated | Links to the person's paternal half-siblings. |
-| `chaptersWritten` | array | Validated | Specific chapters written by this person according to traditional understanding of authorship. |
-| `surname` | string | Validated | Surname, if known. |
 
 ### Relationships
 - `birthYear` → References field `id` of `events` table
@@ -297,15 +297,15 @@ This table provides a comprehensive catalog of every individual mentioned by nam
 - `deathPlace` → References field `id` of `places` table records
 - `verses` → References field `id` of `verses` table records
 - `siblings` → References field `id` of `people` table records
+- `halfSiblingsSameMother` → References field `id` of `people` table records
+- `halfSiblingsSameFather` → References field `id` of `people` table records
+- `chaptersWritten` → References field `id` of `people` table records
 - `mother` → References field `id` of `people` table records
 - `father` → References field `id` of `people` table records
 - `children` → References field `id` of `people` table records
 - `partners` → References field `id` of `people` table records
 - `eastons` → References field `id` of `easton` table records
 - `timeline` → References field `id` of `events` table records
-- `halfSiblingsSameMother` → References field `id` of `people` table records
-- `halfSiblingsSameFather` → References field `id` of `people` table records
-- `chaptersWritten` → References field `id` of `people` table records
 
 ### Example
 ```json
@@ -392,17 +392,17 @@ This table defines collective groups of people, such as tribes, nations, or fami
 |-------|------|--------|-------------|
 | `groupName` | string | Validated | Unique name |
 | `members` | array | Validated | Links to a person record for members of this group |
-| `modified` | string | Unknown | Last modified date and time |
-| `events_dev` | array | Unknown | Links the group to IDs of relevant events. |
 | `verses` | array | Incomplete | Verses mentioning this group |
-| `partOf` | array | Unknown | Links a group to a larger group it is a part of (e.g., each of the twelve tribes of Israel is part of the "Nation of Israel" group). |
+| `modified` | string | Unknown | Last modified date and time |
 | `events` | string | Incomplete | Events in which this group participated. |
+| `events_dev` | array | Unknown | Links the group to IDs of relevant events. |
+| `partOf` | array | Unknown | Links a group to a larger group it is a part of (e.g., each of the twelve tribes of Israel is part of the "Nation of Israel" group). |
 
 ### Relationships
 - `members` → References field `id` of `people` table records
-- `partOf` → References field `id` of `peopleGroups` table records
 - `verses` → References field `id` of `verses` table records
 - `events_dev` → References field `id` of `events` table records
+- `partOf` → References field `id` of `peopleGroups` table records
 
 ### Example
 ```json
@@ -434,13 +434,13 @@ This table organizes the Biblical timeline into discrete years. Each record repr
 |-------|------|--------|-------------|
 | `yearNum` | string | Incomplete | Integer for the year where negative values indicate BC, positive indicates AD |
 | `peopleBorn` | array | Incomplete | People born that year, if known. |
+| `peopleDied` | array | Incomplete | People who died that year, if known. |
 | `events` | string | Incomplete | Title of events which occurred in that year. Complete for the book of Acts. |
+| `booksWritten` | array | Incomplete | Books of the bible written that year, if known. |
 | `isoYear` | integer | Validated | ISO-8601 standard year number (accounts for the non-existence of year 0) |
 | `BC-AD` | string | Incomplete | Groups AD and BC years |
 | `formattedYear` | string | Validated | Formatted string for the year and AD/BC designation |
 | `modified` | string | Unknown | Last modified date and time |
-| `peopleDied` | array | Incomplete | People who died that year, if known. |
-| `booksWritten` | array | Incomplete | Books of the bible written that year, if known. |
 
 ### Relationships
 - `peopleBorn` → References field `id` of `people` table records
