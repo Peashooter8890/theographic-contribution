@@ -476,50 +476,50 @@ This table catalogs all geographic locations mentioned in the Bible. Each record
 | `kjvName` | string | Validated | Place name in the King James Version |
 | `esvName` | string | Validated | Place Name in the English Standard Version (from OpenBible.info/geo) |
 | `comment` | string | Incomplete | Comments from OpenBible.info/geo |
+| `precision` | string | Incomplete | Relative accuracy of lat/long assignment |
 | `featureType` | string | Incomplete | Delineates, region, city, water, etc. Complete for the book of Acts |
+| `rootID` | array | Temporary | If lat/Lon is borrowed from another place, this links to that record. |
+| `aliases` | string | Populated | Alternate names for the same coordinate |
+| `dictionaryLink` | string | Unknown | A URL to its Easton's Bible Dictionary entry at https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary. |
+| `dictionaryText` | string | Unknown | The text content from its Easton's Bible Dictionary entry. |
 | `verseCount` | integer | Validated | Counts how many verses mention this place by name |
 | `placeID` | integer | Validated | Unique numerical identifier, useful to separate places which share the same name |
 | `recogitoUri` | string | Populated | Links to an associated place in other historical databases |
 | `recogitoLat` | string | Populated | Latitude from Recogito matches |
 | `recogitoLon` | string | Populated | Longitude from Recogito matches |
+| `peopleBorn` | array | Validated | People born here, where known |
+| `peopleDied` | array | Validated | People who dies here, where known. |
+| `booksWritten` | array | Incomplete | Books written here, if known. |
 | `verses` | array | Validated | Links to verse records mentioning this place by name |
 | `recogitoStatus` | string | Populated | Verification of inks to other historical databases |
+| `recogitoType` | string | Populated | Geographic type from Recogito matches |
+| `recogitoComments` | string | Populated | Notes on place assignments from Recogito |
 | `recogitoLabel` | string | Populated | Title from Recogito matches |
 | `recogitoUID` | string | Populated | Unique ID for importing Recogito records |
+| `hasBeenHere` | string | Incomplete | People who have been to this location. Complete for the book of Acts |
 | `latitude` | string | Populated | Best available latitude, depending on Recogito and OpenBible validation |
 | `longitude` | string | Populated | Best available longitude, depending on Recogito and OpenBible validation |
 | `status` | string | Temporary | The validation status of the individual place record |
 | `displayTitle` | string | Populated | Disambiguated name suitable for page titles and search results |
 | `alphaGroup` | string | Validated | Used for alphabetical indexing |
 | `slug` | string | Validated | Lowercase, url-friendly version of placeLookup |
+| `duplicate_of` | array | Temporary | Identifies probable duplicates for data cleanup. |
+| `ambiguous` | boolean | Temporary | Identifies display titles which have not been edited for disambiguation. |
 | `eastons` | array | Incomplete | Links to relevant sub-sections in Easton's dictionary. Complete for the book of Acts |
 | `dictText` | array | Incomplete | Markdown-formatted text from relevant sub-section in Easton's dictionary. |
 | `modified` | string | Unknown | Last modified date and time |
-| `featureSubType` | string | Unknown | A more specific classification of the featureType, such as "River" for the "Water" type. |
-| `rootID` | array | Temporary | If lat/Lon is borrowed from another place, this links to that record. |
-| `peopleDied` | array | Validated | People who dies here, where known. |
-| `precision` | string | Incomplete | Relative accuracy of lat/long assignment |
-| `recogitoType` | string | Populated | Geographic type from Recogito matches |
-| `hasBeenHere` | string | Incomplete | People who have been to this location. Complete for the book of Acts |
 | `eventsHere` | array | Incomplete | Events which took place at the location. Complete for the book of Acts |
-| `dictionaryLink` | string | Unknown | A URL to its Easton's Bible Dictionary entry at https://www.biblestudytools.com/dictionaries/eastons-bible-dictionary. |
-| `dictionaryText` | string | Unknown | The text content from its Easton's Bible Dictionary entry. |
-| `recogitoComments` | string | Populated | Notes on place assignments from Recogito |
-| `ambiguous` | boolean | Temporary | Identifies display titles which have not been edited for disambiguation. |
-| `aliases` | string | Populated | Alternate names for the same coordinate |
-| `booksWritten` | array | Incomplete | Books written here, if known. |
-| `duplicate_of` | array | Temporary | Identifies probable duplicates for data cleanup. |
-| `peopleBorn` | array | Validated | People born here, where known |
+| `featureSubType` | string | Unknown | A more specific classification of the featureType, such as "River" for the "Water" type. |
 
 ### Relationships
-- `verses` → References field `id` of `verses` table records
-- `eastons` → References field `id` of `easton` table records
-- `peopleDied` → References field `id` of `people` table records
-- `hasBeenHere` → References subfield `personLookup` of field `fields` of `people` table records
-- `eventsHere` → References field `id` of `events` table records
-- `booksWritten` → References field `id` of `books` table records
-- `duplicate_of` → References field `id` of `places` table records
 - `peopleBorn` → References field `id` of `people` table records
+- `peopleDied` → References field `id` of `people` table records
+- `booksWritten` → References field `id` of `books` table records
+- `verses` → References field `id` of `verses` table records
+- `hasBeenHere` → References subfield `personLookup` of field `fields` of `people` table records
+- `duplicate_of` → References field `id` of `places` table records
+- `eastons` → References field `id` of `easton` table records
+- `eventsHere` → References field `id` of `events` table records
 
 ### Example
 ```json
@@ -600,7 +600,9 @@ This table contains the full text of every verse in the King James Version (`ver
 | `people` | array | Validated | People mentioned in the verse text |
 | `peopleCount` | integer | Validated | Number of people mentioned by name |
 | `placesCount` | integer | Validated | Number of place mentioned by name |
+| `places` | array | Validated | Places mentioned in the verse text |
 | `yearNum` | integer | Populated | Year related to the verse from Torrey's Treasury of Scripture Knowledge. Not aligned with the events table. |
+| `peopleGroups` | array | Incomplete | Groups of people mentioned in the verse text |
 | `chapter` | array | Validated | Link to the Chapter record |
 | `status` | string | Temporary | The validation status of the linkage between the verse and people, places, or events. |
 | `mdText` | string | Populated | King James Version text, with markdown formatting for exports. |
@@ -608,8 +610,6 @@ This table contains the full text of every verse in the King James Version (`ver
 | `verseID` | string | Validated | Unique sequential identifier, useful for sorting. |
 | `modified` | string | Unknown | Last modified date and time |
 | `event` | array | Unknown | Links the group to IDs of relevant events. |
-| `places` | array | Validated | Places mentioned in the verse text |
-| `peopleGroups` | array | Incomplete | Groups of people mentioned in the verse text |
 
 ### Relationships
 - `book` → References field `id` of `books` table records
