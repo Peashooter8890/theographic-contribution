@@ -10,7 +10,7 @@ All Theographic JSON entities have three root fields:
 - `createdTime` - An ISO 8601/RFC 3339 formatted timestamp (e.g., `2018-06-01T13:12:45.000Z`)
 - `fields` - A nested object containing entity-specific data
 
-This documentation focuses exclusively on the fields contained within the `fields` object. Each section below corresponds to a specific JSON file, detailing its field names, data types, and relationships with other JSON files.
+This documentation focuses exclusively on the fields within the `fields` object. Each section below corresponds to a specific JSON file and details its field names, data types, and relationships with other JSON files. Additionally, each section includes a sample JSON entity from real data to illustrate the structure in practice. Note that sample entities may not contain all possible fields, and some long text values or arrays have been truncated for conciseness.
 
 ## Books
 This table contains high-level metadata for each of the 66 books in the Protestant Bible canon. It includes various naming conventions (e.g. `osisName`, `bookName`, `shortName`), canonical divisions (`testament`, `bookDiv`), and structural information like chapter and verse counts. It also serves as a sort of central hub, linking to the chapters, verses, writers, people, and places associated with each book.
