@@ -1,5 +1,5 @@
 ﻿yearNum,formattedYear,era,isoYear,BC-AD,peopleBorn,peopleDied,events,booksWritten,modified
--4004,4004 BC,,-4003,BC,"adam_78,eve_1231",,"God creates all things,God creates man and woman,Man falls into sin",,2020-05-15 01:02
+-4004,4004 BC,,-4003,BC,"adam_78,eve_1231",,"God creates all things, God creates man and woman, Man falls into sin",,2023-12-02 23:09
 -3941,3941 BC,,-3940,BC,,,,,2019-07-22 00:52
 -3939,3939 BC,,-3938,BC,,,,,2020-05-15 01:08
 -3938,3938 BC,,-3937,BC,abel_13,,,,2019-07-22 00:52
@@ -37,7 +37,7 @@
 -2448,2448 BC,,-2447,BC,,,,,2020-05-15 02:00
 -2385,2385 BC,,-2384,BC,,,,,2020-05-15 02:06
 -2353,2353 BC,,-2352,BC,,lamech_1809,,,2019-07-22 00:52
--2348,2348 BC,,-2347,BC,,methuselah_2042,"The Great Flood begins,Water covers the earth",,2020-05-17 01:14
+-2348,2348 BC,,-2347,BC,,methuselah_2042,"The Great Flood begins, Water covers the earth",,2023-12-02 23:09
 -2313,2313 BC,,-2312,BC,,,,,2020-05-17 01:15
 -2290,2290 BC,,-2289,BC,,,,,2019-07-22 00:52
 -2285,2285 BC,,-2284,BC,,,,,2019-07-22 00:52
@@ -183,42 +183,42 @@
 -4,4 BC,,-3,BC,jesus_905,,,,2019-07-22 00:52
 30,AD 30,,30,AD,,,,,2019-07-22 00:52
 30,AD 30,,30,AD,,jesus_905,,,2019-07-22 00:52
-33,AD 33,,33,AD,,,"The Holy Spirit is promised,Jesus ascends to Heaven,Matthias replaces Judas,The Holy Spirit comes,Peter preaches at Pentecost,The church grows,Lame man healed,Peter preaches in Solomon's Portico,Peter and John's Trial,Believers pray for boldness,Believers share all things,Ananias and Sapphira lie to God,Apostles work signs and wonders in Solomon's Portico,""Apostles arrested, put on trial"",Gamaliel advises the counsel and Apostles freed,Seven chosen to serve,Stephen is seized,Stephen addresses the council,Stephen is stoned",,2019-07-22 00:52
-34,AD 34,,34,AD,,,"Saul persecutes the church,Philip preaches in Samaria,Conversion of Ethiopian Eunuch",,2019-07-22 00:52
-35,AD 35,,35,AD,,,"Saul is converted,Saul proclaims Jesus",,2019-07-22 00:52
-41,AD 41,,41,AD,,,"Peter meets Cornelius,Peter preaches to gentiles in Caesarea,Peter defends Gentile salvation,Peter heals Aeneas and Dorcas,Disciples first called Christians",,2019-07-22 00:52
-43,AD 43,,43,AD,,,"Herod kills James,Herod imprisons Peter,An angel rescues Peter from prison,Herod dies",,2019-07-22 00:52
+33,AD 33,,33,AD,,,"The Holy Spirit is promised, Jesus ascends to Heaven, Matthias replaces Judas, The Holy Spirit comes, Peter preaches at Pentecost, The church grows, Lame man healed, Peter preaches in Solomon's Portico, Peter and John's Trial, Believers pray for boldness, Believers share all things, Ananias and Sapphira lie to God, Apostles work signs and wonders in Solomon's Portico, ""Apostles arrested, put on trial"", Gamaliel advises the counsel and Apostles freed, Seven chosen to serve, Stephen is seized, Stephen addresses the council, Stephen is stoned",,2023-12-02 23:09
+34,AD 34,,34,AD,,,"Saul persecutes the church, Philip preaches in Samaria, Conversion of Ethiopian Eunuch",,2023-12-02 23:09
+35,AD 35,,35,AD,,,"Saul is converted, Saul proclaims Jesus",,2023-12-02 23:09
+41,AD 41,,41,AD,,,"Peter meets Cornelius, Peter preaches to gentiles in Caesarea, Peter defends Gentile salvation, Peter heals Aeneas and Dorcas, Disciples first called Christians",,2023-12-02 23:09
+43,AD 43,,43,AD,,,"Herod kills James, Herod imprisons Peter, An angel rescues Peter from prison, Herod dies",,2023-12-02 23:09
 44,AD 44,,44,AD,,,,,2019-07-22 00:52
 45,AD 45,,45,AD,,,,Jas,2019-07-22 00:52
 46,AD 46,,46,AD,,,,,2019-07-22 00:52
-48,AD 48,,48,AD,,,"First missionary journey begins,Barnabas and Saul go to Cyprus,Mission to Antioch in Pisidia",,2019-07-22 00:52
-49,AD 49,,49,AD,,,"Mission to Iconium,Mission to Lystra and Derbe,Return to Antioch in Syria,Paul Writes Galations,Jerusalem Council,Paul and Barnabas part ways",Gal,2019-07-22 00:52
-50,AD 50,,50,AD,,,"Second Missionary Journey begins,Timothy Joins Paul and Silas,""Mission to Phrygia, Galatia and Asia"",Call to Macedonia,Lydia's Conversion,Paul casts demon out of soothsayer,Paul and Silas imprisoned,Philippian jailer converted,Paul and Silas released,Uproar in Thessalonica",Matt,2019-07-22 00:52
-51,AD 51,,51,AD,,,"Mission to Berea,Paul preaches in Athens,""Mission to Corinth, 1&2 Thess Written""","1Thess,2Thess",2019-07-22 00:52
-52,AD 52,,52,AD,,,Return from Second Missionary Journey,,2019-07-22 00:52
-53,AD 53,,53,AD,,,"Third Missionary Journey Begins,Mission to Ephesus/1 Cor Written",,2019-07-22 00:52
+48,AD 48,,48,AD,,,"First missionary journey begins, Barnabas and Saul go to Cyprus, Mission to Antioch in Pisidia",,2023-12-02 23:09
+49,AD 49,,49,AD,,,"Mission to Iconium, Mission to Lystra and Derbe, Return to Antioch in Syria, Paul Writes Galations, Jerusalem Council, Paul and Barnabas part ways",Gal,2023-12-02 23:09
+50,AD 50,,50,AD,,,"Second Missionary Journey begins, Timothy Joins Paul and Silas, ""Mission to Phrygia, Galatia and Asia"", Call to Macedonia, Lydia's Conversion, Paul casts demon out of soothsayer, Paul and Silas imprisoned, Philippian jailer converted, Paul and Silas released, Uproar in Thessalonica",Matt,2023-12-02 23:09
+51,AD 51,,51,AD,,,"Mission to Berea, Paul preaches in Athens, ""Mission to Corinth, 1&2 Thess Written""","1Thess,2Thess",2023-12-02 23:09
+52,AD 52,,52,AD,,,Return from Second Missionary Journey,,2023-12-02 23:09
+53,AD 53,,53,AD,,,"Third Missionary Journey Begins, Mission to Ephesus/1 Cor Written",,2023-12-02 23:09
 54,AD 54,,54,AD,,,,,2019-07-22 00:52
-56,AD 56,,56,AD,,,"Riot in Ephesus,Mission to Macedonia and Greece","1Cor,2Cor",2019-07-22 00:52
-57,AD 57,,57,AD,,,"Eutychus revived,Voyage to Miletus,Paul speaks to Ephesian Elders,Voyage from Miletus to Jerusalem,Paul visits elders in Jerusalem,Paul sent to Felix,Mission to Macedonia and Greece,Paul arrested in the Temple,Paul gives his testimony,Paul goes before the Council,The conspiracy to kill Paul","Rom,Luke",2020-05-24 00:51
-58,AD 58,,58,AD,,,Paul sent to Felix,,2020-05-24 00:51
-59,AD 59,,59,AD,,,"Paul appeals to Caesar,Journey to Rome begins,Paul is shipwrecked by a storm,Agrippa and Bernice meet Festus,Paul goes before Agrippa",,2020-05-24 00:51
-60,AD 60,,60,AD,,,"Paul arrives at Rome,Paul's First Roman imprisonment,Paul stays at Malta",,2019-07-22 00:52
-61,AD 61,,61,AD,,,Paul's First Roman imprisonment,"Acts,Eph,Phil,Col,Phlm",2019-07-22 00:52
-62,AD 62,,62,AD,,,Paul's First Roman imprisonment,,2019-07-22 00:52
+56,AD 56,,56,AD,,,"Riot in Ephesus, Mission to Macedonia and Greece","1Cor,2Cor",2023-12-02 23:09
+57,AD 57,,57,AD,,,"Eutychus revived, Voyage to Miletus, Paul speaks to Ephesian Elders, Voyage from Miletus to Jerusalem, Paul visits elders in Jerusalem, Paul sent to Felix, Mission to Macedonia and Greece, Paul arrested in the Temple, Paul gives his testimony, Paul goes before the Council, The conspiracy to kill Paul","Rom,Luke",2023-12-02 23:09
+58,AD 58,,58,AD,,,Paul sent to Felix,,2023-12-02 23:09
+59,AD 59,,59,AD,,,"Paul appeals to Caesar, Journey to Rome begins, Paul is shipwrecked by a storm, Agrippa and Bernice meet Festus, Paul goes before Agrippa",,2023-12-02 23:09
+60,AD 60,,60,AD,,,"Paul arrives at Rome, Paul's First Roman imprisonment, Paul stays at Malta",,2023-12-02 23:09
+61,AD 61,,61,AD,,,Paul's First Roman imprisonment,"Acts,Eph,Phil,Col,Phlm",2023-12-02 23:09
+62,AD 62,,62,AD,,,Paul's First Roman imprisonment,,2023-12-02 23:09
 63,AD 63,,63,AD,,,,"1Tim,Titus",2019-07-22 00:52
 64,AD 64,,64,AD,,,,1Pet,2019-07-22 00:52
 66,AD 66,,66,AD,,,,2Tim,2019-07-22 00:52
 67,AD 67,,67,AD,,,,"Heb,2Pet,Mark",2019-07-22 00:52
 1821,AD 1821,,1821,AD,,,,,2019-07-22 00:52
 -4003,4003 BC,,-4002,BC,cain_533,,,,2020-05-15 01:08
--3875,3875 BC,,-3874,BC,,,"Cain kills Abel,God curses Cain",,2020-05-15 01:18
+-3875,3875 BC,,-3874,BC,,,"Cain kills Abel, God curses Cain",,2023-12-02 23:09
 -3874,3874 BC,,-3873,BC,seth_2504,,,,2020-05-15 01:43
 -2446,2446 BC,,-2445,BC,shem_2613,,,,2020-05-15 02:00
 -1846,1846 BC,,-1845,BC,,shem_2613,,,2020-05-15 02:01
--2468,2468 BC,,-2467,BC,,,God decides to destroy every living thing,,2020-05-15 02:39
--2400,2400 BC,,-2399,BC,,,God instructs Noah to build the ark,,2020-05-15 02:39
--2347,2347 BC,,-2346,BC,,,"The flood subsides,Leaving the Ark,Noahic Covenant",,2020-05-15 13:10
--2346,2346 BC,,-2345,BC,arphaxad_312,,Noah gets drunk and Canaan is cursed,,2020-05-17 01:14
+-2468,2468 BC,,-2467,BC,,,God decides to destroy every living thing,,2023-12-02 23:09
+-2400,2400 BC,,-2399,BC,,,God instructs Noah to build the ark,,2023-12-02 23:09
+-2347,2347 BC,,-2346,BC,,,"The flood subsides, Leaving the Ark, Noahic Covenant",,2023-12-02 23:09
+-2346,2346 BC,,-2345,BC,arphaxad_312,,Noah gets drunk and Canaan is cursed,,2023-12-02 23:09
 -1908,1908 BC,,-1907,BC,,arphaxad_312,,,2020-05-17 01:14
 -2281,2281 BC,,-2280,BC,eber_1030,,,,2020-05-17 01:14
 -2247,2247 BC,,-2246,BC,peleg_2308,,,,2020-05-17 01:15
@@ -231,9 +231,9 @@
 -1978,1978 BC,,-1977,BC,,reu_2428,,,2020-05-17 02:00
 -1955,1955 BC,,-1954,BC,,serug_2503,,,2020-05-17 02:01
 -2126,2126 BC,,-2125,BC,terah_2841,,,,2020-05-17 02:01
--1921,1921 BC,,-1920,BC,,terah_2841,"Abraham is called to Canaan,Abraham goes to Egypt",,2020-07-09 12:36
--2246,2246 BC,,-2245,BC,,,Languages are confused at Babel,,2020-05-17 20:17
--1920,1920 BC,,-1919,BC,,,Abraham and Lot Separate,,2020-07-09 12:37
+-1921,1921 BC,,-1920,BC,,terah_2841,"Abraham is called to Canaan, Abraham goes to Egypt",,2023-12-02 23:09
+-2246,2246 BC,,-2245,BC,,,Languages are confused at Babel,,2023-12-02 23:09
+-1920,1920 BC,,-1919,BC,,,Abraham and Lot Separate,,2023-12-02 23:09
 -1918,1918 BC,,-1917,BC,,,,,2020-07-09 12:37
 -1755,1755 BC,,-1754,BC,"judah_1751,dan_973,rachel_2386",,,,2020-09-02 16:45
 -1721,1721 BC,,-1720,BC,pharez_2338,,,,2020-09-02 01:55
