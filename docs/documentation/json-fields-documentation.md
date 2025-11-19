@@ -1,14 +1,21 @@
 # Theographic Bible Metadata - JSON Fields Documentation
-This documentation provides a detailed reference for the structure and fields of each JSON file  within the Theographic Bible Metadata dataset.
+This documentation provides a comprehensive reference for the structure and fields of JSON files within the Theographic Bible Metadata dataset.
 
-The JSON files are located in the json/ directory of the root repository. Each section below corresponds to a specific JSON file, detailing its fields, data types, and relationships with other JSON files.
+### Dataset Overview
+The JSON files are located in the `json/` directory of the root repository. These files were generated through a Python ETL script from Airtable, where the original data was inputted and continues to be updated. Because of this Airtable origin, you may encounter peculiarities in data structure and field name inconsistencies. Throughout this documentation, JSON files are referred to as "tables" since they directly represent tabular data exported from Airtable.
 
-The JSON data was generated via a python ETL script from airtable where all the original data was inputted and is being updated. If there are peculiarities in how the data is structured (along with field name inconsistencies), this is a big reason why. Therefore, JSON files will often be referred to as "tables" since it quite literally represents tabular data from airtable.
+### Standard JSON Entity Structure
+All Theographic JSON entities have three root fields:
+- `id` - A 14-character alphanumeric case-sensitive unique record identifier (e.g., `recRAcqtgn28zXm1a`)
+- `createdTime` - An ISO 8601/RFC 3339 formatted timestamp (e.g., `2018-06-01T13:12:45.000Z`)
+- `fields` - A nested object containing entity-specific data
+
+This documentation focuses exclusively on the fields contained within the `fields` object. Each section below corresponds to a specific JSON file, detailing its field names, data types, and relationships with other JSON files.
 
 ## Books
 This table contains high-level metadata for each of the 66 books in the Protestant Bible canon. It includes various naming conventions (e.g. `osisName`, `bookName`, `shortName`), canonical divisions (`testament`, `bookDiv`), and structural information like chapter and verse counts. It also serves as a sort of central hub, linking to the chapters, verses, writers, people, and places associated with each book.
 
-### Field Reference (16 Fields)
+### Fields Reference (16 Fields)
 
 | Field | Type | Status | Description |
 |-------|------|--------|-------------|
@@ -19,6 +26,8 @@ This table contains high-level metadata for each of the 66 books in the Protesta
 | `shortName` | string | Validated | Shortest abbreviation, useful for small labels |
 | `bookOrder` | integer | Validated | Order of books in the traditional Protestant canon, excluding Apocrypha. |
 | `verses` | array | Validated | Links to records in the "verses" table. |
+| `yearWritten` | array | Incomplete | Approximate year written, if known. |
+| `placeWritten` | array | Incomplete | Place the book was written, if known. |
 | `verseCount` | integer | Validated | Total verses |
 | `chapters` | array | Validated | Links to records in the "chapters" table. |
 | `writers` | array | Validated | Roll-up from Chapter-level writer assignment |
@@ -26,55 +35,53 @@ This table contains high-level metadata for each of the 66 books in the Protesta
 | `slug` | string | Validated | Lowercase, url-friendly version of Osis Name |
 | `peopleCount` | integer | Validated | Number of people mentioned by name within the book |
 | `placeCount` | integer | Validated | Number of places mentioned by name within the book |
-| `yearWritten` | array | Incomplete | Approximate year written, if known. |
-| `placeWritten` | array | Incomplete | Place the book was written, if known. |
 
 ### Relationships
 - `verses` → References field `id` of `verses` table records
-- `chapters` → References field `id` of `chapters` table records
-- `writers` → References subfield `personLookup` of field `fields` of `people` table records
 - `yearWritten` → References field `id` of `periods` table
 - `placeWritten` → References field `id` `places` table
+- `chapters` → References field `id` of `chapters` table records
+- `writers` → References subfield `personLookup` of field `fields` of `people` table records
 
 ### Example
 ```json
 {
-  "osisName": "Rom",
-  "bookName": "Romans",
-  "chapterCount": 16,
-  "bookDiv": "Pauline Epistles",
-  "shortName": "Ro",
-  "bookOrder": 45,
-  "verses": [
-    "recld8Sxx8yDn1Ik8",
-    "reczZ8CrNFwW1n6MD",
-    ...
-  ],
-  "yearWritten": [
-    "recvOFi9OkrgM1IAO"
-  ],
-  "placeWritten": [
-    "recpmPd6JhbqhqA0Q"
-  ],
-  "verseCount": 433,
-  "chapters": [
-    "recMCMGLnVg4olx48",
-    "recMcLBnD88gjBXir",
-    ...
-  ],
-  "writers": [
-    "paul_2479"
-  ],
-  "testament": "New Testament",
-  "slug": "rom",
-  "peopleCount": 238,
-  "placeCount": 13
+  "id": "recyvIyxRMFob6SoM",
+  "createdTime": "2018-05-13T17:19:17.000Z",
+  "fields": {
+    "osisName": "Rom",
+    "bookName": "Romans",
+    "chapterCount": 16,
+    "bookDiv": "Pauline Epistles",
+    "shortName": "Ro",
+    "bookOrder": 45,
+    "verses": [
+      "recld8Sxx8yDn1Ik8"
+    ],
+    "yearWritten": [
+      "recvOFi9OkrgM1IAO"
+    ],
+    "placeWritten": [
+      "recpmPd6JhbqhqA0Q"
+    ],
+    "verseCount": 433,
+    "chapters": [
+      "recMCMGLnVg4olx48"
+    ],
+    "writers": [
+      "paul_2479"
+    ],
+    "testament": "New Testament",
+    "slug": "rom",
+    "peopleCount": 238,
+    "placeCount": 13
+  }
 }
 ```
 ## Chapters
 This table defines every chapter in the Bible. Each record links to its parent `book` and lists all the `verses` it contains. It also identifies the traditional `writer` of the chapter and provides counts of the distinct people and places mentioned within it.
 
-### Field Reference (10 Fields)
+### Fields Reference (10 Fields)
 
 | Field | Type | Status | Description |
 |-------|------|--------|-------------|
@@ -120,7 +127,7 @@ This table defines every chapter in the Bible. Each record links to its parent `
 ## Easton
 This table contains parsed entries from the 1897 Easton's Bible Dictionary. Each record represents a single dictionary term, providing its label, definition text (`dictText`), and metadata extracted from the source XML at http://www.ccel.org/ccel/easton/ebd2.xml. Crucially, it links dictionary entries to corresponding records in the `people` and `places` tables, enriching the dataset with historical and theological context.
 
-### Field Reference (12 Fields)
+### Fields Reference (12 Fields)
 
 | Field | Type | Status | Description |
 |-------|------|--------|-------------|
@@ -166,7 +173,7 @@ This table contains parsed entries from the 1897 Easton's Bible Dictionary. Each
 ## Events
 This table chronicles the timeline of Biblical events. Each record details a specific event with a `title`, chronological data (e.g. `startDate`), and its relationship to other events (`predecessor`, `partOf`). It connects each event to its `participants` (people), `locations` (places), and the narrative `verses` that describe it.
 
-### Field Reference (19 Fields)
+### Fields Reference (19 Fields)
 
 | Field | Type | Status | Description |
 |-------|------|--------|-------------|
@@ -239,7 +246,7 @@ This table chronicles the timeline of Biblical events. Each record details a spe
 ## People (38 Fields)
 This table provides a comprehensive catalog of every individual mentioned by name in the Bible. Records include identifying information (e.g. `name`, `gender`), biographical details (e.g. `birthYear`, `deathYear`), and extensive relational data, linking to family members (`father`, `mother`, `siblings`), associated `events`, and all `verses` where the person is mentioned.
 
-### Field Reference (38 Fields)
+### Fields Reference (38 Fields)
 
 | Field | Type | Status | Description |
 |-------|------|--------|-------------|
@@ -379,7 +386,7 @@ This table provides a comprehensive catalog of every individual mentioned by nam
 ## PeopleGroups (7 Fields)
 This table defines collective groups of people, such as tribes, nations, or families. Each record has a `groupName` and contains an array of `members` who belong to that group. It also links to `verses` where the group is mentioned and `events` in which they participated.
 
-### Field Reference (7 Fields)
+### Fields Reference (7 Fields)
 
 | Field | Type | Status | Description |
 |-------|------|--------|-------------|
@@ -421,7 +428,7 @@ This table defines collective groups of people, such as tribes, nations, or fami
 ## Periods (9 Fields)
 This table organizes the Biblical timeline into discrete years. Each record represents a single year and aggregates key information from that period, including `peopleBorn`, `peopleDied`, `events` that occurred, and Biblical `booksWritten`.
 
-### Field Reference (9 Fields)
+### Fields Reference (9 Fields)
 
 | Field | Type | Status | Description |
 |-------|------|--------|-------------|
@@ -459,7 +466,7 @@ This table organizes the Biblical timeline into discrete years. Each record repr
 ## Places (40 Fields)
 This table catalogs all geographic locations mentioned in the Bible. Each record includes identifying names (e.g. `kjvName`, `displayTitle`), geographic coordinates (e.g. `latitude`, `longitude`), and feature classifications (e.g. `featureType`, `featureSubType`). It also links to all `verses` mentioning the location, `events` that occurred there, and people associated with it.
 
-### Field Reference (40 Fields)
+### Fields Reference (40 Fields)
 
 | Field | Type | Status | Description |
 |-------|------|--------|-------------|
@@ -582,7 +589,7 @@ This table catalogs all geographic locations mentioned in the Bible. Each record
 ## Verses (17 Fields)
 This table contains the full text of every verse in the King James Version (`verseText`). Each verse is a fundamental unit of the dataset, identified by its `osisRef` (an ID using Open Scriptural Information Standard) and linked to its `book` and `chapter`. It also contains the core relational data, linking to the specific `people`, `places`, `peopleGroups`, and `event` referenced in its text.
 
-### Field Reference (17 Fields)
+### Fields Reference (17 Fields)
 
 | Field | Type | Status | Description |
 |-------|------|--------|-------------|
